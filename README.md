@@ -110,7 +110,7 @@ The parent's phone must do this once before receiving OTPs:
 
 ---
 
-## Test walkthrough for the jury
+## Test walkthrough
 
 ### Test 1 — New app install notification (star feature)
 1. Make sure ConsentLens is running in the background
@@ -137,7 +137,9 @@ The parent's phone must do this once before receiving OTPs:
 4. Rating dialog appears
 5. Verify consent appears in Consent History
 
-### Test 4 — Minor guardian consent via WhatsApp OTP
+### Test 4 — Minor guardian consent via WhatsApp OTP/Email
+
+option A:
 1. On any risk report, tap Grant Consent
 2. Enter age under 18 (example: 15)
 3. Guardian Consent Required dialog appears
@@ -145,7 +147,14 @@ The parent's phone must do this once before receiving OTPs:
 5. Enter parent's number with country code (India example: 919876543210)
 6. Parent receives OTP on WhatsApp
 7. Enter the 6-digit OTP in the app
-8. Expected: consent saved with guardian approval
+   
+Option B: Email Consent
+1.Select Email Consent
+2.Enter parent's email address (example: parent@email.com)
+3.Parent receives a consent email in their inbox
+4.Enter the 6-digit OTP in the app
+
+Expected: consent saved with guardian approval
 
 ### Test 5 — ISO 27001 certification check
 1. Scan YouTube (com.google.android.youtube) or WhatsApp (com.whatsapp)
