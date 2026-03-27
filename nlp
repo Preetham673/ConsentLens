@@ -1,0 +1,29 @@
+from fastapi import FastAPI
+from transformers import pipeline
+
+app = FastAPI()
+
+classifier = pipeline("text-classification",
+                      model="nlptown/bert-base-multilingual-uncased-sentiment")
+
+@app.post("/analyze-policy")
+def analyze_policy(data: dict):
+
+    text = data.get("policy")
+
+    if not text:
+        return {"error": "policy text required"}
+
+    result = classifier(text[:512])
+
+    risk = "LOW"
+
+    if result[0]['label'] in ["1 star", "2 stars"]:
+        risk = "HIGH"
+    elif result[0]['label'] == "3 stars":
+        risk = "MEDIUM"
+
+    return {
+        "policyRisk": risk,
+        "confidence": result[0]['score']
+    }
