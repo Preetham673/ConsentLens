@@ -89,11 +89,12 @@ private static final String BASE_URL = "http://192.168.X.X:5000/api/";
 // private static final String BASE_URL = "http://10.0.2.2:5000/api/";
 ```
 
-5. Connect your Android phone via USB cable
+5. Connect your Android phone via WIFI
 6. Enable USB Debugging on your phone:
-   Settings → Developer Options → USB Debugging → ON
-7. Click the green Run button in Android Studio
-8. App installs and launches automatically
+   Settings → Developer Options → wireless Debugging → ON -> scan the the QR -> connect your phone with android studio
+   NOTE : phone and PC must be in the same wifi.
+8. Click the green Run button in Android Studio
+9. App installs and launches automatically
 
 ---
 
