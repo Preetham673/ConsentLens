@@ -1,0 +1,505 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#0F172A">
+
+    <!-- HEADER -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#1E293B"
+        android:orientation="vertical"
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp"
+        android:paddingTop="20dp"
+        android:paddingBottom="20dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginBottom="14dp">
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/btnBack"
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                app:cardCornerRadius="10dp"
+                app:cardBackgroundColor="#334155"
+                app:cardElevation="0dp"
+                android:clickable="true"
+                android:focusable="true"
+                android:layout_marginEnd="14dp">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="←"
+                    android:textSize="17sp"
+                    android:textColor="#94A3B8"
+                    android:gravity="center"/>
+            </com.google.android.material.card.MaterialCardView>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Privacy Simulation Lab"
+                    android:textSize="19sp"
+                    android:textStyle="bold"
+                    android:textColor="#F1F5F9"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="AI-powered real-time risk analysis"
+                    android:textSize="10sp"
+                    android:textColor="#64748B"
+                    android:layout_marginTop="2dp"/>
+            </LinearLayout>
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="38dp"
+                android:layout_height="38dp"
+                app:cardCornerRadius="10dp"
+                app:cardBackgroundColor="#5B21B6"
+                app:cardElevation="0dp">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="🔬"
+                    android:textSize="18sp"
+                    android:gravity="center"/>
+            </com.google.android.material.card.MaterialCardView>
+
+        </LinearLayout>
+
+        <!-- Live status bar -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#0F172A"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:padding="10dp">
+
+            <View
+                android:id="@+id/dotStatus"
+                android:layout_width="8dp"
+                android:layout_height="8dp"
+                android:background="@drawable/bg_dot_green"
+                android:layout_marginEnd="8dp"/>
+            <TextView
+                android:id="@+id/txtStatus"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="AI Engine ready · Select an app to begin"
+                android:textSize="11sp"
+                android:textColor="#64748B"/>
+            <TextView
+                android:id="@+id/txtScanCount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0 scanned"
+                android:textSize="10sp"
+                android:textColor="#334155"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="14dp">
+
+            <!-- SECTION LABEL -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:layout_marginBottom="12dp">
+                <View android:layout_width="3dp" android:layout_height="14dp" android:background="#8B5CF6" android:layout_marginEnd="8dp"/>
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="SIMULATED APPS"
+                    android:textSize="11sp"
+                    android:textStyle="bold"
+                    android:textColor="#64748B"
+                    android:letterSpacing="0.08"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Real AI analysis"
+                    android:textSize="10sp"
+                    android:textColor="#8B5CF6"/>
+            </LinearLayout>
+
+            <!-- FINTECH CARD -->
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="12dp"
+                app:cardCornerRadius="16dp"
+                app:cardElevation="0dp"
+                app:cardBackgroundColor="#1E293B"
+                app:strokeColor="#334155"
+                app:strokeWidth="1dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:gravity="center_vertical"
+                        android:layout_marginBottom="8dp">
+                        <com.google.android.material.card.MaterialCardView
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            app:cardCornerRadius="14dp"
+                            app:cardBackgroundColor="#1D4ED8"
+                            app:cardElevation="0dp"
+                            android:layout_marginEnd="14dp">
+                            <TextView android:layout_width="match_parent" android:layout_height="match_parent" android:text="💳" android:textSize="24sp" android:gravity="center"/>
+                        </com.google.android.material.card.MaterialCardView>
+                        <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:orientation="vertical">
+                            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Fintech Wallet" android:textSize="15sp" android:textStyle="bold" android:textColor="#F1F5F9"/>
+                            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="com.fintech.wallet" android:textSize="10sp" android:textColor="#475569" android:layout_marginTop="2dp"/>
+                            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Finance · Payments · Banking" android:textSize="10sp" android:textColor="#64748B" android:layout_marginTop="2dp"/>
+                        </LinearLayout>
+                        <TextView
+                            android:id="@+id/txtFintechRisk"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="NOT SCANNED"
+                            android:textSize="8sp"
+                            android:textStyle="bold"
+                            android:textColor="#475569"
+                            android:background="@drawable/bg_audit_badge_amber"
+                            android:paddingStart="8dp"
+                            android:paddingEnd="8dp"
+                            android:paddingTop="4dp"
+                            android:paddingBottom="4dp"/>
+                    </LinearLayout>
+
+                    <!-- Result panel — hidden until scanned -->
+                    <LinearLayout
+                        android:id="@+id/panelFintechResult"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:background="#0F172A"
+                        android:padding="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:visibility="gone">
+                        <TextView
+                            android:id="@+id/txtFintechResult"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text=""
+                            android:textSize="11sp"
+                            android:textColor="#94A3B8"
+                            android:lineSpacingExtra="3dp"
+                            android:fontFamily="monospace"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+                        <Button
+                            android:id="@+id/btnFintech"
+                            android:layout_width="0dp"
+                            android:layout_height="44dp"
+                            android:layout_weight="1"
+                            android:text="Scan &amp; Analyse"
+                            android:textSize="12sp"
+                            android:textColor="#FFFFFF"
+                            android:backgroundTint="#1D4ED8"
+                            style="@style/Widget.MaterialComponents.Button"
+                            app:cornerRadius="10dp"
+                            android:layout_marginEnd="8dp"/>
+                        <Button
+                            android:id="@+id/btnFintechConsent"
+                            android:layout_width="wrap_content"
+                            android:layout_height="44dp"
+                            android:text="Grant"
+                            android:textSize="12sp"
+                            android:textColor="#FFFFFF"
+                            android:backgroundTint="#059669"
+                            style="@style/Widget.MaterialComponents.Button"
+                            app:cornerRadius="10dp"
+                            android:visibility="gone"/>
+                    </LinearLayout>
+
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <!-- HEALTH CARD -->
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="12dp"
+                app:cardCornerRadius="16dp"
+                app:cardElevation="0dp"
+                app:cardBackgroundColor="#1E293B"
+                app:strokeColor="#334155"
+                app:strokeWidth="1dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:gravity="center_vertical"
+                        android:layout_marginBottom="8dp">
+                        <com.google.android.material.card.MaterialCardView
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            app:cardCornerRadius="14dp"
+                            app:cardBackgroundColor="#059669"
+                            app:cardElevation="0dp"
+                            android:layout_marginEnd="14dp">
+                            <TextView android:layout_width="match_parent" android:layout_height="match_parent" android:text="🏥" android:textSize="24sp" android:gravity="center"/>
+                        </com.google.android.material.card.MaterialCardView>
+                        <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:orientation="vertical">
+                            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Health Tracker" android:textSize="15sp" android:textStyle="bold" android:textColor="#F1F5F9"/>
+                            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="com.health.tracker" android:textSize="10sp" android:textColor="#475569" android:layout_marginTop="2dp"/>
+                            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Health · Biometrics · Fitness" android:textSize="10sp" android:textColor="#64748B" android:layout_marginTop="2dp"/>
+                        </LinearLayout>
+                        <TextView
+                            android:id="@+id/txtHealthRisk"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="NOT SCANNED"
+                            android:textSize="8sp"
+                            android:textStyle="bold"
+                            android:textColor="#475569"
+                            android:background="@drawable/bg_audit_badge_amber"
+                            android:paddingStart="8dp"
+                            android:paddingEnd="8dp"
+                            android:paddingTop="4dp"
+                            android:paddingBottom="4dp"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/panelHealthResult"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:background="#0F172A"
+                        android:padding="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:visibility="gone">
+                        <TextView
+                            android:id="@+id/txtHealthResult"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text=""
+                            android:textSize="11sp"
+                            android:textColor="#94A3B8"
+                            android:lineSpacingExtra="3dp"
+                            android:fontFamily="monospace"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+                        <Button
+                            android:id="@+id/btnHealth"
+                            android:layout_width="0dp"
+                            android:layout_height="44dp"
+                            android:layout_weight="1"
+                            android:text="Scan &amp; Analyse"
+                            android:textSize="12sp"
+                            android:textColor="#FFFFFF"
+                            android:backgroundTint="#059669"
+                            style="@style/Widget.MaterialComponents.Button"
+                            app:cornerRadius="10dp"
+                            android:layout_marginEnd="8dp"/>
+                        <Button
+                            android:id="@+id/btnHealthConsent"
+                            android:layout_width="wrap_content"
+                            android:layout_height="44dp"
+                            android:text="Grant"
+                            android:textSize="12sp"
+                            android:textColor="#FFFFFF"
+                            android:backgroundTint="#059669"
+                            style="@style/Widget.MaterialComponents.Button"
+                            app:cornerRadius="10dp"
+                            android:visibility="gone"/>
+                    </LinearLayout>
+
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <!-- ECOMMERCE CARD -->
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="12dp"
+                app:cardCornerRadius="16dp"
+                app:cardElevation="0dp"
+                app:cardBackgroundColor="#1E293B"
+                app:strokeColor="#334155"
+                app:strokeWidth="1dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:gravity="center_vertical"
+                        android:layout_marginBottom="8dp">
+                        <com.google.android.material.card.MaterialCardView
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            app:cardCornerRadius="14dp"
+                            app:cardBackgroundColor="#B45309"
+                            app:cardElevation="0dp"
+                            android:layout_marginEnd="14dp">
+                            <TextView android:layout_width="match_parent" android:layout_height="match_parent" android:text="🛒" android:textSize="24sp" android:gravity="center"/>
+                        </com.google.android.material.card.MaterialCardView>
+                        <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:orientation="vertical">
+                            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="E-Commerce Shop" android:textSize="15sp" android:textStyle="bold" android:textColor="#F1F5F9"/>
+                            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="com.ecommerce.shop" android:textSize="10sp" android:textColor="#475569" android:layout_marginTop="2dp"/>
+                            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Shopping · Analytics · Ads" android:textSize="10sp" android:textColor="#64748B" android:layout_marginTop="2dp"/>
+                        </LinearLayout>
+                        <TextView
+                            android:id="@+id/txtEcommerceRisk"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="NOT SCANNED"
+                            android:textSize="8sp"
+                            android:textStyle="bold"
+                            android:textColor="#475569"
+                            android:background="@drawable/bg_audit_badge_amber"
+                            android:paddingStart="8dp"
+                            android:paddingEnd="8dp"
+                            android:paddingTop="4dp"
+                            android:paddingBottom="4dp"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/panelEcommerceResult"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:background="#0F172A"
+                        android:padding="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:visibility="gone">
+                        <TextView
+                            android:id="@+id/txtEcommerceResult"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text=""
+                            android:textSize="11sp"
+                            android:textColor="#94A3B8"
+                            android:lineSpacingExtra="3dp"
+                            android:fontFamily="monospace"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+                        <Button
+                            android:id="@+id/btnEcommerce"
+                            android:layout_width="0dp"
+                            android:layout_height="44dp"
+                            android:layout_weight="1"
+                            android:text="Scan &amp; Analyse"
+                            android:textSize="12sp"
+                            android:textColor="#FFFFFF"
+                            android:backgroundTint="#B45309"
+                            style="@style/Widget.MaterialComponents.Button"
+                            app:cornerRadius="10dp"
+                            android:layout_marginEnd="8dp"/>
+                        <Button
+                            android:id="@+id/btnEcommerceConsent"
+                            android:layout_width="wrap_content"
+                            android:layout_height="44dp"
+                            android:text="Grant"
+                            android:textSize="12sp"
+                            android:textColor="#FFFFFF"
+                            android:backgroundTint="#059669"
+                            style="@style/Widget.MaterialComponents.Button"
+                            app:cornerRadius="10dp"
+                            android:visibility="gone"/>
+                    </LinearLayout>
+
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <!-- SUMMARY CARD — shown after all scanned -->
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/cardSummary"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="16dp"
+                app:cardElevation="0dp"
+                app:cardBackgroundColor="#1E293B"
+                app:strokeColor="#8B5CF6"
+                app:strokeWidth="1dp"
+                android:visibility="gone">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="SIMULATION SUMMARY"
+                        android:textSize="11sp"
+                        android:textStyle="bold"
+                        android:textColor="#8B5CF6"
+                        android:letterSpacing="0.08"
+                        android:layout_marginBottom="10dp"/>
+                    <TextView
+                        android:id="@+id/txtSummary"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:textSize="12sp"
+                        android:textColor="#CBD5E1"
+                        android:lineSpacingExtra="4dp"/>
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

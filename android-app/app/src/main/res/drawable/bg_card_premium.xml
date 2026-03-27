@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- White base -->
+    <item>
+        <shape android:shape="rectangle">
+            <solid android:color="#FFFFFF"/>
+            <corners android:radius="20dp"/>
+        </shape>
+    </item>
+
+    <!-- Very subtle top shimmer -->
+    <item android:bottom="40dp">
+        <shape android:shape="rectangle">
+            <gradient
+                android:startColor="#F8FAFF"
+                android:endColor="#FFFFFF"
+                android:angle="270"
+                android:type="linear"/>
+            <corners android:topLeftRadius="20dp" android:topRightRadius="20dp"/>
+        </shape>
+    </item>
+
+</layer-list>

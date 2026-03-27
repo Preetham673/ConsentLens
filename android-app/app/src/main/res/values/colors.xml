@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+
+    <!-- CORE RISK -->
+    <color name="risk_low">#2DD478</color>
+    <color name="risk_medium">#FBBF24</color>
+    <color name="risk_high">#EF4444</color>
+
+    <!-- HERO GRADIENT -->
+    <color name="bg_start">#1A1A2E</color>
+    <color name="bg_end">#0F3460</color>
+
+    <!-- TEXT -->
+    <color name="text_primary">#1A1A2E</color>
+    <color name="text_secondary">#6B7280</color>
+    <color name="text_hint">#D1D5DB</color>
+
+    <!-- BACKGROUNDS -->
+    <color name="bg_page">#EEF2FF</color>
+    <color name="card_bg">#FFFFFF</color>
+    <color name="card_stroke">#F0F0F5</color>
+    <color name="stat_card_bg">#F9FAFB</color>
+
+    <!-- DIVIDER -->
+    <color name="divider_color">#E5E7EB</color>
+
+    <!-- SECTION ICON BACKGROUNDS -->
+    <color name="icon_bg_green">#DCFCE7</color>
+    <color name="icon_bg_amber">#FEF3C7</color>
+    <color name="icon_bg_blue">#DBEAFE</color>
+    <color name="icon_bg_purple">#EDE9FE</color>
+    <color name="icon_bg_red">#FEE2E2</color>
+
+    <!-- ALERT WARNING -->
+    <color name="warn_bg">#FFFBEB</color>
+    <color name="warn_border">#F59E0B</color>
+    <color name="warn_title">#92400E</color>
+    <color name="warn_body">#78350F</color>
+
+    <!-- ALERT DANGER -->
+    <color name="danger_bg">#FFF5F5</color>
+    <color name="danger_border">#EF4444</color>
+    <color name="danger_title">#991B1B</color>
+    <color name="danger_body">#7F1D1D</color>
+
+    <!-- CERTIFICATION GREEN -->
+    <color name="cert_bg">#F0FDF4</color>
+    <color name="cert_text_title">#166534</color>
+    <color name="cert_text_sub">#16A34A</color>
+
+    <!-- CHIPS -->
+    <color name="chip_bg">#EFF6FF</color>
+    <color name="chip_text">#1D4ED8</color>
+    <color name="chip_green_bg">#F0FDF4</color>
+    <color name="chip_green_text">#166534</color>
+
+    <!-- BUTTONS -->
+    <color name="btn_deny_stroke">#FCA5A5</color>
+
+</resources>

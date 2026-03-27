@@ -1,0 +1,432 @@
+[
+  {
+    "packageName": "com.example.a3rdactivity",
+    "rating": 3,
+    "timestamp": "2026-02-18T06:58:16.048Z"
+  },
+  {
+    "packageName": "com.instagram.android",
+    "rating": 4,
+    "timestamp": "2026-02-18T07:07:13.201Z"
+  },
+  {
+    "packageName": "com.vivo.gallery",
+    "rating": 5,
+    "timestamp": "2026-02-18T07:11:10.462Z"
+  },
+  {
+    "packageName": "com.example.a3rdactivity",
+    "rating": 3,
+    "timestamp": "2026-02-18T07:55:03.441Z"
+  },
+  {
+    "packageName": "com.vos.as.vit",
+    "rating": 3,
+    "timestamp": "2026-02-18T08:06:05.359Z"
+  },
+  {
+    "packageName": "com.google.android.marvin.talkback",
+    "rating": 5,
+    "timestamp": "2026-02-18T08:06:15.497Z"
+  },
+  {
+    "packageName": "vivo.app.adaptiveui.plugin",
+    "rating": 5,
+    "timestamp": "2026-02-18T08:13:50.672Z"
+  },
+  {
+    "packageName": "com.vivo.appfilter",
+    "rating": 5,
+    "timestamp": "2026-02-18T08:14:00.544Z"
+  },
+  {
+    "packageName": "com.vivo.alphacamera",
+    "rating": 5,
+    "timestamp": "2026-02-18T08:15:50.056Z"
+  },
+  {
+    "packageName": "com.vivo.gallery",
+    "rating": 3,
+    "timestamp": "2026-02-18T08:28:45.500Z"
+  },
+  {
+    "packageName": "com.google.android.projection.gearhead",
+    "rating": 5,
+    "timestamp": "2026-02-18T08:28:51.602Z"
+  },
+  {
+    "packageName": "com.vivo.appfilter",
+    "rating": 5,
+    "timestamp": "2026-02-18T08:28:55.726Z"
+  },
+  {
+    "packageName": "com.vivo.nightpearl",
+    "rating": 5,
+    "timestamp": "2026-02-18T08:29:37.396Z"
+  },
+  {
+    "packageName": "com.vivo.alphacamera",
+    "rating": 5,
+    "timestamp": "2026-02-18T08:31:09.246Z"
+  },
+  {
+    "packageName": "com.google.android.marvin.talkback",
+    "rating": 5,
+    "timestamp": "2026-02-18T08:51:17.138Z"
+  },
+  {
+    "packageName": "com.vivo.aiengine",
+    "rating": 5,
+    "timestamp": "2026-02-18T09:04:00.618Z"
+  },
+  {
+    "packageName": "com.google.android.projection.gearhead",
+    "rating": 5,
+    "timestamp": "2026-02-18T09:04:04.217Z"
+  },
+  {
+    "packageName": "com.android.egg",
+    "rating": 5,
+    "timestamp": "2026-02-18T09:04:08.658Z"
+  },
+  {
+    "packageName": "com.vivo.doubleinstance",
+    "rating": 5,
+    "timestamp": "2026-02-18T09:04:14.155Z"
+  },
+  {
+    "packageName": "com.example.a3rdactivity",
+    "rating": 5,
+    "timestamp": "2026-02-18T15:25:49.688Z"
+  },
+  {
+    "packageName": "com.vivo.nightpearl",
+    "rating": 5,
+    "timestamp": "2026-02-18T15:25:58.292Z"
+  },
+  {
+    "packageName": "com.android.angle",
+    "rating": 5,
+    "timestamp": "2026-02-18T15:26:05.363Z"
+  },
+  {
+    "packageName": "com.vivo.widget.gallery",
+    "rating": 5,
+    "timestamp": "2026-02-18T15:26:56.684Z"
+  },
+  {
+    "packageName": "com.ansangha.drdriving",
+    "rating": 5,
+    "timestamp": "2026-02-18T16:24:23.386Z"
+  },
+  {
+    "packageName": "com.ansangha.drdriving",
+    "rating": 5,
+    "timestamp": "2026-02-18T16:25:34.691Z"
+  },
+  {
+    "packageName": "com.vivo.widget.gallery",
+    "rating": 5,
+    "timestamp": "2026-02-18T16:28:03.636Z"
+  },
+  {
+    "packageName": "com.example.cameragps",
+    "rating": 5,
+    "timestamp": "2026-03-05T04:59:09.447Z"
+  },
+  {
+    "packageName": "com.instagram.android",
+    "rating": 4,
+    "timestamp": "2026-03-05T05:13:42.837Z"
+  },
+  {
+    "packageName": "com.google.android.youtube",
+    "rating": 4,
+    "timestamp": "2026-03-05T05:17:02.001Z"
+  },
+  {
+    "packageName": "com.vivo.alphacamera",
+    "rating": 4,
+    "timestamp": "2026-03-05T08:19:13.903Z"
+  },
+  {
+    "packageName": "com.google.android.projection.gearhead",
+    "rating": 4,
+    "timestamp": "2026-03-05T08:19:23.958Z"
+  },
+  {
+    "packageName": "com.fintech.wallet",
+    "rating": 5,
+    "timestamp": "2026-03-05T08:19:39.539Z"
+  },
+  {
+    "packageName": "com.vivo.alphacamera",
+    "rating": 4,
+    "timestamp": "2026-03-05T08:34:23.103Z"
+  },
+  {
+    "packageName": "com.vivo.gallery",
+    "rating": 4,
+    "timestamp": "2026-03-05T09:31:28.127Z"
+  },
+  {
+    "packageName": "com.instagram.android",
+    "rating": 3,
+    "timestamp": "2026-03-05T09:50:49.098Z"
+  },
+  {
+    "packageName": "com.vivo.aiengine",
+    "rating": 4,
+    "timestamp": "2026-03-05T10:10:47.270Z"
+  },
+  {
+    "packageName": "com.vivo.alphacamera",
+    "rating": 4,
+    "timestamp": "2026-03-05T10:22:00.028Z"
+  },
+  {
+    "packageName": "com.google.android.projection.gearhead",
+    "rating": 4,
+    "timestamp": "2026-03-05T10:42:43.482Z"
+  },
+  {
+    "packageName": "com.android.chrome",
+    "rating": 4,
+    "timestamp": "2026-03-06T15:03:53.444Z"
+  },
+  {
+    "packageName": "com.vivo.gallery",
+    "rating": 5,
+    "timestamp": "2026-03-06T15:16:50.171Z"
+  },
+  {
+    "packageName": "com.instagram.android",
+    "rating": 5,
+    "timestamp": "2026-03-06T15:17:00.803Z"
+  },
+  {
+    "packageName": "com.ecommerce.shop",
+    "rating": 5,
+    "timestamp": "2026-03-06T15:17:15.390Z"
+  },
+  {
+    "packageName": "com.example.a3rdactivity",
+    "rating": 5,
+    "timestamp": "2026-03-06T16:35:15.694Z"
+  },
+  {
+    "packageName": "com.vivo.android.wifi.common.resources.overlay",
+    "rating": 5,
+    "timestamp": "2026-03-06T17:19:09.305Z"
+  },
+  {
+    "packageName": "com.fintech.wallet",
+    "rating": 5,
+    "timestamp": "2026-03-06T17:19:42.550Z"
+  },
+  {
+    "packageName": "com.vivo.gamewatch",
+    "rating": 5,
+    "timestamp": "2026-03-06T17:21:37.059Z"
+  },
+  {
+    "packageName": "com.android.managedprovisioning",
+    "rating": 5,
+    "timestamp": "2026-03-06T18:14:53.927Z"
+  },
+  {
+    "packageName": "com.google.android.apps.docs.editors.docs",
+    "rating": 5,
+    "timestamp": "2026-03-06T18:15:16.169Z"
+  },
+  {
+    "packageName": "com.instagram.android",
+    "rating": 5,
+    "timestamp": "2026-03-06T18:22:50.455Z"
+  },
+  {
+    "packageName": "com.vos.as.vit",
+    "rating": 4,
+    "timestamp": "2026-03-07T10:43:06.508Z"
+  },
+  {
+    "packageName": "com.fintech.wallet",
+    "rating": 5,
+    "timestamp": "2026-03-07T10:43:53.618Z"
+  },
+  {
+    "packageName": "com.instagram.android",
+    "rating": 5,
+    "timestamp": "2026-03-07T10:53:10.442Z"
+  },
+  {
+    "packageName": "com.example.a3rdactivity",
+    "rating": 5,
+    "timestamp": "2026-03-08T18:43:28.675Z"
+  },
+  {
+    "packageName": "com.google.android.youtube",
+    "rating": 5,
+    "timestamp": "2026-03-08T18:43:40.268Z"
+  },
+  {
+    "packageName": "com.vivo.alphacamera",
+    "rating": 5,
+    "timestamp": "2026-03-09T09:17:14.147Z"
+  },
+  {
+    "packageName": "com.android.server.telecom",
+    "rating": 5,
+    "timestamp": "2026-03-09T17:55:42.691Z"
+  },
+  {
+    "packageName": "com.google.android.youtube",
+    "rating": 5,
+    "timestamp": "2026-03-09T18:03:04.092Z"
+  },
+  {
+    "packageName": "com.android.emergency",
+    "rating": 5,
+    "timestamp": "2026-03-09T18:24:31.703Z"
+  },
+  {
+    "packageName": "com.android.chrome",
+    "rating": 5,
+    "timestamp": "2026-03-10T04:59:12.920Z"
+  },
+  {
+    "packageName": "com.android.chrome",
+    "rating": 4,
+    "timestamp": "2026-03-10T05:27:02.348Z"
+  },
+  {
+    "packageName": "com.vivo.nightpearl",
+    "rating": 5,
+    "timestamp": "2026-03-10T06:27:00.751Z"
+  },
+  {
+    "packageName": "com.google.android.youtube",
+    "rating": 5,
+    "timestamp": "2026-03-12T04:40:16.965Z"
+  },
+  {
+    "packageName": "com.google.android.marvin.talkback",
+    "rating": 5,
+    "timestamp": "2026-03-12T06:05:32.261Z"
+  },
+  {
+    "packageName": "com.example.cameragps",
+    "rating": 5,
+    "timestamp": "2026-03-12T06:14:34.739Z"
+  },
+  {
+    "packageName": "com.android.cameraextensions",
+    "rating": 5,
+    "timestamp": "2026-03-12T11:01:03.922Z"
+  },
+  {
+    "packageName": "com.android.providers.media",
+    "rating": 4,
+    "timestamp": "2026-03-12T11:01:44.505Z"
+  },
+  {
+    "packageName": "com.fintech.wallet",
+    "rating": 5,
+    "timestamp": "2026-03-12T11:02:36.592Z"
+  },
+  {
+    "packageName": "com.google.android.apps.maps",
+    "rating": 5,
+    "timestamp": "2026-03-12T11:22:40.615Z"
+  },
+  {
+    "packageName": "com.example.myapplication1",
+    "rating": 5,
+    "timestamp": "2026-03-12T11:23:14.508Z"
+  },
+  {
+    "packageName": "com.android.proxyhandler",
+    "rating": 5,
+    "timestamp": "2026-03-12T11:23:27.506Z"
+  },
+  {
+    "packageName": "com.google.android.marvin.talkback",
+    "rating": 4,
+    "timestamp": "2026-03-13T03:44:39.498Z"
+  },
+  {
+    "packageName": "com.android.angle",
+    "rating": 5,
+    "timestamp": "2026-03-13T07:28:29.117Z"
+  },
+  {
+    "packageName": "com.vivo.calculator",
+    "rating": 5,
+    "timestamp": "2026-03-13T08:55:30.875Z"
+  },
+  {
+    "packageName": "com.vivo.alphacamera",
+    "rating": 5,
+    "timestamp": "2026-03-16T10:10:19.737Z"
+  },
+  {
+    "packageName": "com.vivo.alphacamera",
+    "rating": 4,
+    "timestamp": "2026-03-16T10:17:06.946Z"
+  },
+  {
+    "packageName": "com.vivo.calculator",
+    "rating": 5,
+    "timestamp": "2026-03-17T16:17:56.192Z"
+  },
+  {
+    "packageName": "com.google.android.youtube",
+    "rating": 5,
+    "timestamp": "2026-03-18T10:22:18.558Z"
+  },
+  {
+    "packageName": "com.google.android.youtube",
+    "rating": 5,
+    "timestamp": "2026-03-19T06:27:47.246Z"
+  },
+  {
+    "packageName": "com.instagram.android",
+    "rating": 5,
+    "timestamp": "2026-03-19T06:28:09.050Z"
+  },
+  {
+    "packageName": "com.google.android.youtube",
+    "rating": 4,
+    "timestamp": "2026-03-19T06:40:25.171Z"
+  },
+  {
+    "packageName": "com.instagram.android",
+    "rating": 5,
+    "timestamp": "2026-03-19T07:15:18.528Z"
+  },
+  {
+    "packageName": "com.instagram.android",
+    "rating": 5,
+    "timestamp": "2026-03-19T07:16:21.923Z"
+  },
+  {
+    "packageName": "com.instagram.android",
+    "rating": 5,
+    "timestamp": "2026-03-19T09:01:28.310Z"
+  },
+  {
+    "packageName": "com.google.android.youtube",
+    "rating": 5,
+    "timestamp": "2026-03-19T15:36:01.227Z"
+  },
+  {
+    "packageName": "com.instagram.android",
+    "rating": 4,
+    "timestamp": "2026-03-27T02:41:43.610Z"
+  },
+  {
+    "packageName": "com.google.android.googlequicksearchbox",
+    "rating": 5,
+    "timestamp": "2026-03-27T03:34:40.529Z"
+  }
+]

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">कंसेंटलेंस</string>
+    <string name="dashboard_title">कंसेंटलेंस डैशबोर्ड</string>
+    <string name="dashboard_subtitle">आपकी गोपनीयता। आपके अधिकार। आपका नियंत्रण।</string>
+    <string name="supported_by">iSEA · DSCI द्वारा समर्थित</string>
+
+    <string name="total_consents">कुल सहमति</string>
+    <string name="high_risk_apps">उच्च जोखिम ऐप</string>
+    <string name="compliance_score">अनुपालन स्कोर</string>
+    <string name="revocation_error">रद्दीकरण त्रुटि</string>
+    <string name="user_satisfaction">उपयोगकर्ता संतुष्टि</string>
+
+    <string name="checking_compliance">अनुपालन स्थिति जाँच रहे हैं...</string>
+    <string name="compliant">🟢 अनुपालक</string>
+    <string name="partially_compliant">🟡 आंशिक अनुपालन</string>
+    <string name="non_compliant">🔴 गैर अनुपालक</string>
+
+    <string name="for_users">उपयोगकर्ताओं के लिए</string>
+    <string name="everyone">सभी</string>
+    <string name="for_organisations">संगठनों के लिए</string>
+    <string name="admin">व्यवस्थापक</string>
+
+    <string name="scan_apps">मेरे ऐप स्कैन करें</string>
+    <string name="scan_apps_sub">कौन से ऐप सुरक्षित हैं जाँचें</string>
+    <string name="btn_scan">स्कैन</string>
+    <string name="consent_history">मेरी सहमति इतिहास</string>
+    <string name="consent_history_sub">आपने क्या सहमति दी देखें</string>
+    <string name="btn_view">देखें</string>
+
+    <string name="audit_logs">ऑडिट लॉग्स</string>
+    <string name="audit_logs_sub">सभी सहमति गतिविधियाँ ट्रैक करें</string>
+    <string name="compliance_dashboard">अनुपालन डैशबोर्ड</string>
+    <string name="compliance_dashboard_sub">GDPR और DPDP अनुपालन अवलोकन</string>
+    <string name="compliance_report">अनुपालन रिपोर्ट</string>
+    <string name="compliance_report_sub">नियामक रिपोर्ट उत्पन्न करें</string>
+    <string name="simulate_apps">ऐप सिमुलेशन</string>
+    <string name="simulate_apps_sub">मल्टी-ऐप गोपनीयता परिदृश्य सिमुलेट करें</string>
+    <string name="btn_open">खोलें</string>
+    <string name="btn_generate">उत्पन्न करें</string>
+    <string name="btn_run">चलाएं</string>
+
+    <string name="footer_line1">DSCI द्वारा संचालित · iSEA द्वारा समर्थित</string>
+    <string name="footer_line2">GDPR · DPDP · ISO 27001 अनुपालक</string>
+
+    <string name="grant">अनुमति दें</string>
+    <string name="deny">अस्वीकार करें</string>
+    <string name="receipt_title">कंसेंट रसीद</string>
+    <string name="system_status">सिस्टम स्थिति</string>
+    <string name="risk_monitoring">जोखिम निगरानी</string>
+    <string name="consent_engine">कंसेंट इंजन</string>
+    <string name="compliance_status">अनुपालन स्थिति</string>
+</resources>

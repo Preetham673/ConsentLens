@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">கான்சென்ட் லென்ஸ்</string>
+    <string name="dashboard_title">கான்சென்ட் லென்ஸ் டாஷ்போர்டு</string>
+    <string name="dashboard_subtitle">உங்கள் தனியுரிமை. உங்கள் உரிமைகள். உங்கள் கட்டுப்பாடு.</string>
+    <string name="supported_by">iSEA · DSCI ஆதரவு</string>
+
+    <string name="total_consents">மொத்த அனுமதிகள்</string>
+    <string name="high_risk_apps">அதிக ஆபத்து செயலிகள்</string>
+    <string name="compliance_score">இணக்கம் மதிப்பெண்</string>
+    <string name="revocation_error">திரும்பப்பெறல் பிழை</string>
+    <string name="user_satisfaction">பயனர் திருப்தி</string>
+
+    <string name="checking_compliance">இணக்கம் நிலை சரிபார்க்கிறது...</string>
+    <string name="compliant">🟢 இணக்கம் உள்ளது</string>
+    <string name="partially_compliant">🟡 பகுதி இணக்கம்</string>
+    <string name="non_compliant">🔴 இணக்கம் இல்லை</string>
+
+    <string name="for_users">பயனர்களுக்கு</string>
+    <string name="everyone">அனைவரும்</string>
+    <string name="for_organisations">நிறுவனங்களுக்கு</string>
+    <string name="admin">நிர்வாகி</string>
+
+    <string name="scan_apps">என் செயலிகளை ஸ்கேன் செய்க</string>
+    <string name="scan_apps_sub">எந்த செயலிகள் பாதுகாப்பானவை என சரிபார்க்கவும்</string>
+    <string name="btn_scan">ஸ்கேன்</string>
+    <string name="consent_history">என் அனுமதி வரலாறு</string>
+    <string name="consent_history_sub">நீங்கள் என்ன ஒப்புக்கொண்டீர்கள் என பாருங்கள்</string>
+    <string name="btn_view">பார்க்க</string>
+
+    <string name="audit_logs">ஆடிட் பதிவுகள்</string>
+    <string name="audit_logs_sub">அனைத்து அனுமதி செயல்பாடுகளை கண்காணிக்கவும்</string>
+    <string name="compliance_dashboard">இணக்கம் டாஷ்போர்டு</string>
+    <string name="compliance_dashboard_sub">GDPR மற்றும் DPDP இணக்கம் மேலோட்டம்</string>
+    <string name="compliance_report">இணக்கம் அறிக்கை</string>
+    <string name="compliance_report_sub">ஒழுங்குமுறை அறிக்கைகள் உருவாக்கவும்</string>
+    <string name="simulate_apps">செயலி சிமுலேஷன்</string>
+    <string name="simulate_apps_sub">பல செயலி தனியுரிமை காட்சிகளை சிமுலேட் செய்க</string>
+    <string name="btn_open">திற</string>
+    <string name="btn_generate">உருவாக்கு</string>
+    <string name="btn_run">இயக்கு</string>
+
+    <string name="footer_line1">DSCI மூலம் இயக்கப்படுகிறது · iSEA ஆதரவு</string>
+    <string name="footer_line2">GDPR · DPDP · ISO 27001 இணக்கம்</string>
+
+    <string name="grant">அனுமதி வழங்கு</string>
+    <string name="deny">நிராகரி</string>
+    <string name="receipt_title">அனுமதி ரசீது</string>
+    <string name="system_status">அமைப்பு நிலை</string>
+    <string name="risk_monitoring">அபாய கண்காணிப்பு</string>
+    <string name="consent_engine">அனுமதி இயந்திரம்</string>
+    <string name="compliance_status">இணக்கம் நிலை</string>
+</resources>

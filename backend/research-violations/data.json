@@ -1,0 +1,20 @@
+[
+  {
+    "entity": "Meta Platforms",
+    "apps": ["com.instagram.android", "com.facebook.katana"],
+    "law": "GDPR",
+    "article": "Article 6",
+    "severity": "HIGH",
+    "description": "Unlawful processing of personal data for advertising",
+    "year": 2023
+  },
+  {
+    "entity": "Google",
+    "apps": ["com.google.android.youtube"],
+    "law": "GDPR",
+    "article": "Article 5",
+    "severity": "MEDIUM",
+    "description": "Lack of transparency in data processing",
+    "year": 2022
+  }
+]

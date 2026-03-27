@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="#FFFFFF"
+    android:padding="24dp">
+
+    <!-- Icon -->
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:layout_gravity="center"
+        android:layout_marginBottom="16dp"
+        app:cardCornerRadius="20dp"
+        app:cardBackgroundColor="#EDE9FE"
+        app:cardElevation="0dp">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="🔒"
+            android:textSize="30sp"
+            android:gravity="center"/>
+    </com.google.android.material.card.MaterialCardView>
+
+    <!-- Title -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Age Verification"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="#111827"
+        android:gravity="center"
+        android:layout_marginBottom="8dp"/>
+
+    <!-- Subtitle -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Required by GDPR &amp; DPDP for consent compliance"
+        android:textSize="13sp"
+        android:textColor="#374151"
+        android:gravity="center"
+        android:lineSpacingExtra="3dp"
+        android:layout_marginBottom="24dp"/>
+
+    <!-- Age label -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Your Age"
+        android:textSize="13sp"
+        android:textStyle="bold"
+        android:textColor="#111827"
+        android:layout_marginBottom="8dp"/>
+
+    <!-- Age input field -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:background="@drawable/bg_input_field"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:paddingStart="14dp"
+        android:paddingEnd="14dp"
+        android:layout_marginBottom="20dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="🎂"
+            android:textSize="16sp"
+            android:layout_marginEnd="10dp"/>
+
+        <EditText
+            android:id="@+id/etAge"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:hint="Enter your age"
+            android:textColor="#111827"
+            android:textSize="15sp"
+            android:inputType="number"
+            android:background="@android:color/transparent"
+            android:maxLength="3"/>
+
+    </LinearLayout>
+
+    <!-- Info banner -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_alert_warn_premium"
+        android:orientation="horizontal"
+        android:padding="12dp"
+        android:gravity="center_vertical"
+        android:layout_marginBottom="24dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ℹ️"
+            android:textSize="14sp"
+            android:layout_marginEnd="8dp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Under 18? A parent or guardian must approve this consent."
+            android:textSize="12sp"
+            android:textColor="#78350F"
+            android:lineSpacingExtra="2dp"/>
+    </LinearLayout>
+
+    <!-- Buttons -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnAgeCancel"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:layout_weight="1"
+            android:text="Cancel"
+            android:textSize="14sp"
+            android:textColor="#374151"
+            android:backgroundTint="#F3F4F6"
+            android:layout_marginEnd="8dp"
+            style="@style/Widget.MaterialComponents.Button"
+            app:cornerRadius="12dp"/>
+
+        <Button
+            android:id="@+id/btnAgeSubmit"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:layout_weight="1"
+            android:text="Verify ✓"
+            android:textSize="14sp"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#6366F1"
+            style="@style/Widget.MaterialComponents.Button"
+            app:cornerRadius="12dp"/>
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#0F172A">
+
+    <!-- HEADER -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#1E293B"
+        android:orientation="vertical"
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp"
+        android:paddingTop="20dp"
+        android:paddingBottom="16dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginBottom="14dp">
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/btnBack"
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                app:cardCornerRadius="10dp"
+                app:cardBackgroundColor="#334155"
+                app:cardElevation="0dp"
+                android:clickable="true"
+                android:focusable="true"
+                android:layout_marginEnd="14dp">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="←"
+                    android:textSize="17sp"
+                    android:textColor="#94A3B8"
+                    android:gravity="center"/>
+            </com.google.android.material.card.MaterialCardView>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Compliance Report"
+                    android:textSize="19sp"
+                    android:textStyle="bold"
+                    android:textColor="#F1F5F9"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="GDPR · DPDP · ISO 27001 Analysis"
+                    android:textSize="10sp"
+                    android:textColor="#64748B"
+                    android:layout_marginTop="2dp"/>
+            </LinearLayout>
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="38dp"
+                android:layout_height="38dp"
+                app:cardCornerRadius="10dp"
+                app:cardBackgroundColor="#1D4ED8"
+                app:cardElevation="0dp">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="📄"
+                    android:textSize="18sp"
+                    android:gravity="center"/>
+            </com.google.android.material.card.MaterialCardView>
+
+        </LinearLayout>
+
+        <!-- Export button in header -->
+        <Button
+            android:id="@+id/btnExportPdf"
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:text="⬇  Export as PDF"
+            android:textSize="13sp"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#1D4ED8"
+            style="@style/Widget.MaterialComponents.Button"
+            app:cornerRadius="12dp"/>
+
+    </LinearLayout>
+
+    <!-- SECTION LABEL -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        android:paddingTop="14dp"
+        android:paddingBottom="10dp">
+        <View
+            android:layout_width="3dp"
+            android:layout_height="14dp"
+            android:background="#1D4ED8"
+            android:layout_marginEnd="8dp"/>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Full Report"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            android:textColor="#94A3B8"
+            android:letterSpacing="0.08"
+            android:textAllCaps="true"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Scroll to read"
+            android:textSize="10sp"
+            android:textColor="#475569"/>
+    </LinearLayout>
+
+    <!-- REPORT CONTENT -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingStart="14dp"
+            android:paddingEnd="14dp"
+            android:paddingBottom="24dp">
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="14dp"
+                app:cardElevation="0dp"
+                app:cardBackgroundColor="#1E293B"
+                app:strokeColor="#334155"
+                app:strokeWidth="1dp">
+
+                <TextView
+                    android:id="@+id/txtReport"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Loading compliance report..."
+                    android:textSize="13sp"
+                    android:textColor="#CBD5E1"
+                    android:padding="16dp"
+                    android:lineSpacingExtra="4dp"
+                    android:fontFamily="monospace"/>
+
+            </com.google.android.material.card.MaterialCardView>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

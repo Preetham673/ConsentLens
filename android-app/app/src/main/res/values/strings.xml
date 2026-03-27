@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">ConsentLens</string>
+    <string name="dashboard_title">ConsentLens Dashboard</string>
+    <string name="dashboard_subtitle">Your Privacy. Your Rights. Your Control.</string>
+    <string name="supported_by">Supported by iSEA · DSCI</string>
+
+    <!-- KPI Labels -->
+    <string name="total_consents">Total Consents</string>
+    <string name="high_risk_apps">High Risk Apps</string>
+    <string name="compliance_score">Compliance Score</string>
+    <string name="revocation_error">Revocation Error</string>
+    <string name="user_satisfaction">User Satisfaction</string>
+
+    <!-- Compliance Badge -->
+    <string name="checking_compliance">Checking compliance status...</string>
+    <string name="compliant">🟢 COMPLIANT</string>
+    <string name="partially_compliant">🟡 PARTIALLY COMPLIANT</string>
+    <string name="non_compliant">🔴 NON-COMPLIANT</string>
+
+    <!-- Section Labels -->
+    <string name="for_users">For Users</string>
+    <string name="everyone">Everyone</string>
+    <string name="for_organisations">For Organisations</string>
+    <string name="admin">Admin</string>
+
+    <!-- User Section -->
+    <string name="scan_apps">Scan My Apps</string>
+    <string name="scan_apps_sub">Check which apps are safe to use</string>
+    <string name="btn_scan">Scan</string>
+    <string name="consent_history">My Consent History</string>
+    <string name="consent_history_sub">See what you have agreed to</string>
+    <string name="btn_view">View</string>
+
+    <!-- Organisation Section -->
+    <string name="audit_logs">Audit Logs</string>
+    <string name="audit_logs_sub">Track all consent activities</string>
+    <string name="compliance_dashboard">Compliance Dashboard</string>
+    <string name="compliance_dashboard_sub">GDPR and DPDP compliance overview</string>
+    <string name="compliance_report">Compliance Report</string>
+    <string name="compliance_report_sub">Generate regulatory reports</string>
+    <string name="simulate_apps">App Simulation</string>
+    <string name="simulate_apps_sub">Simulate multi-app privacy scenarios</string>
+    <string name="btn_open">Open</string>
+    <string name="btn_generate">Generate</string>
+    <string name="btn_run">Run</string>
+
+    <!-- Footer -->
+    <string name="footer_line1">Powered by DSCI · Supported by iSEA</string>
+    <string name="footer_line2">GDPR · DPDP · ISO 27001 Compliant</string>
+
+    <!-- Other -->
+    <string name="grant">Grant Consent</string>
+    <string name="deny">Deny</string>
+    <string name="receipt_title">Consent Receipt</string>
+    <string name="system_status">System Status</string>
+    <string name="risk_monitoring">Risk Monitoring</string>
+    <string name="consent_engine">Consent Engine</string>
+    <string name="compliance_status">Compliance Status</string>
+</resources>

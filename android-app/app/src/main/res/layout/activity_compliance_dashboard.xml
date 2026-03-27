@@ -1,0 +1,374 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#0F172A">
+
+    <!-- HEADER -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#1E293B"
+        android:orientation="vertical"
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp"
+        android:paddingTop="20dp"
+        android:paddingBottom="20dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/btnBack"
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                app:cardCornerRadius="10dp"
+                app:cardBackgroundColor="#334155"
+                app:cardElevation="0dp"
+                android:clickable="true"
+                android:focusable="true"
+                android:layout_marginEnd="14dp">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="←"
+                    android:textSize="17sp"
+                    android:textColor="#94A3B8"
+                    android:gravity="center"/>
+            </com.google.android.material.card.MaterialCardView>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Compliance Dashboard"
+                    android:textSize="19sp"
+                    android:textStyle="bold"
+                    android:textColor="#F1F5F9"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Live GDPR · DPDP · ISO 27001 Overview"
+                    android:textSize="10sp"
+                    android:textColor="#64748B"
+                    android:layout_marginTop="2dp"/>
+            </LinearLayout>
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="38dp"
+                android:layout_height="38dp"
+                app:cardCornerRadius="10dp"
+                app:cardBackgroundColor="#0F766E"
+                app:cardElevation="0dp">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="⚖️"
+                    android:textSize="18sp"
+                    android:gravity="center"/>
+            </com.google.android.material.card.MaterialCardView>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="14dp">
+
+            <!-- COMPLIANCE SCORE CARD -->
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="12dp"
+                app:cardCornerRadius="16dp"
+                app:cardElevation="0dp"
+                app:cardBackgroundColor="#1E293B"
+                app:strokeColor="#334155"
+                app:strokeWidth="1dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical"
+                    android:padding="16dp">
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="OVERALL COMPLIANCE"
+                            android:textSize="10sp"
+                            android:textColor="#64748B"
+                            android:letterSpacing="0.08"/>
+                        <TextView
+                            android:id="@+id/txtComplianceScore"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="—%"
+                            android:textSize="36sp"
+                            android:textStyle="bold"
+                            android:textColor="#10B981"
+                            android:layout_marginTop="4dp"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Compliance Readiness Score"
+                            android:textSize="11sp"
+                            android:textColor="#475569"
+                            android:layout_marginTop="2dp"/>
+                    </LinearLayout>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="🏆"
+                        android:textSize="40sp"/>
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <!-- GDPR + DPDP COVERAGE ROW -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="12dp">
+
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginEnd="6dp"
+                    app:cardCornerRadius="14dp"
+                    app:cardElevation="0dp"
+                    app:cardBackgroundColor="#1E293B"
+                    app:strokeColor="#334155"
+                    app:strokeWidth="1dp">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:padding="14dp"
+                        android:gravity="center">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="🔵"
+                            android:textSize="24sp"
+                            android:layout_marginBottom="6dp"/>
+                        <TextView
+                            android:id="@+id/txtGDPR"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="—%"
+                            android:textSize="22sp"
+                            android:textStyle="bold"
+                            android:textColor="#60A5FA"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="GDPR Coverage"
+                            android:textSize="10sp"
+                            android:textColor="#475569"
+                            android:layout_marginTop="4dp"/>
+                    </LinearLayout>
+                </com.google.android.material.card.MaterialCardView>
+
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    app:cardCornerRadius="14dp"
+                    app:cardElevation="0dp"
+                    app:cardBackgroundColor="#1E293B"
+                    app:strokeColor="#334155"
+                    app:strokeWidth="1dp">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:padding="14dp"
+                        android:gravity="center">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="🟠"
+                            android:textSize="24sp"
+                            android:layout_marginBottom="6dp"/>
+                        <TextView
+                            android:id="@+id/txtDPDP"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="—%"
+                            android:textSize="22sp"
+                            android:textStyle="bold"
+                            android:textColor="#FB923C"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="DPDP Coverage"
+                            android:textSize="10sp"
+                            android:textColor="#475569"
+                            android:layout_marginTop="4dp"/>
+                    </LinearLayout>
+                </com.google.android.material.card.MaterialCardView>
+
+            </LinearLayout>
+
+            <!-- CONSENT STATS ROW -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="12dp">
+
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginEnd="6dp"
+                    app:cardCornerRadius="14dp"
+                    app:cardElevation="0dp"
+                    app:cardBackgroundColor="#1E293B"
+                    app:strokeColor="#334155"
+                    app:strokeWidth="1dp">
+                    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:padding="14dp" android:gravity="center">
+                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="✅" android:textSize="22sp" android:layout_marginBottom="6dp"/>
+                        <TextView android:id="@+id/txtActive" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="—" android:textSize="22sp" android:textStyle="bold" android:textColor="#10B981"/>
+                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Active Consents" android:textSize="10sp" android:textColor="#475569" android:layout_marginTop="4dp"/>
+                    </LinearLayout>
+                </com.google.android.material.card.MaterialCardView>
+
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginEnd="6dp"
+                    app:cardCornerRadius="14dp"
+                    app:cardElevation="0dp"
+                    app:cardBackgroundColor="#1E293B"
+                    app:strokeColor="#334155"
+                    app:strokeWidth="1dp">
+                    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:padding="14dp" android:gravity="center">
+                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="⏰" android:textSize="22sp" android:layout_marginBottom="6dp"/>
+                        <TextView android:id="@+id/txtExpired" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="—" android:textSize="22sp" android:textStyle="bold" android:textColor="#FBBF24"/>
+                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Expired" android:textSize="10sp" android:textColor="#475569" android:layout_marginTop="4dp"/>
+                    </LinearLayout>
+                </com.google.android.material.card.MaterialCardView>
+
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    app:cardCornerRadius="14dp"
+                    app:cardElevation="0dp"
+                    app:cardBackgroundColor="#1E293B"
+                    app:strokeColor="#334155"
+                    app:strokeWidth="1dp">
+                    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:padding="14dp" android:gravity="center">
+                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="⚠️" android:textSize="22sp" android:layout_marginBottom="6dp"/>
+                        <TextView android:id="@+id/txtHighRisk" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="—" android:textSize="22sp" android:textStyle="bold" android:textColor="#EF4444"/>
+                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="High Risk" android:textSize="10sp" android:textColor="#475569" android:layout_marginTop="4dp"/>
+                    </LinearLayout>
+                </com.google.android.material.card.MaterialCardView>
+
+            </LinearLayout>
+
+            <!-- EXTRA KPIs ROW -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="12dp">
+
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginEnd="6dp"
+                    app:cardCornerRadius="14dp"
+                    app:cardElevation="0dp"
+                    app:cardBackgroundColor="#1E293B"
+                    app:strokeColor="#334155"
+                    app:strokeWidth="1dp">
+                    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:padding="14dp" android:gravity="center">
+                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="🔄" android:textSize="22sp" android:layout_marginBottom="6dp"/>
+                        <TextView android:id="@+id/txtRevocationRate" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="—%" android:textSize="18sp" android:textStyle="bold" android:textColor="#F472B6"/>
+                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Revocation Error" android:textSize="10sp" android:textColor="#475569" android:layout_marginTop="4dp"/>
+                    </LinearLayout>
+                </com.google.android.material.card.MaterialCardView>
+
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    app:cardCornerRadius="14dp"
+                    app:cardElevation="0dp"
+                    app:cardBackgroundColor="#1E293B"
+                    app:strokeColor="#334155"
+                    app:strokeWidth="1dp">
+                    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:padding="14dp" android:gravity="center">
+                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="⭐" android:textSize="22sp" android:layout_marginBottom="6dp"/>
+                        <TextView android:id="@+id/txtSatisfaction" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="—" android:textSize="18sp" android:textStyle="bold" android:textColor="#FBBF24"/>
+                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="User Satisfaction" android:textSize="10sp" android:textColor="#475569" android:layout_marginTop="4dp"/>
+                    </LinearLayout>
+                </com.google.android.material.card.MaterialCardView>
+
+            </LinearLayout>
+
+            <!-- RECENT AUDIT EVENTS -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="RECENT AUDIT EVENTS"
+                android:textSize="11sp"
+                android:textStyle="bold"
+                android:textColor="#64748B"
+                android:letterSpacing="0.08"
+                android:layout_marginBottom="8dp"/>
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="14dp"
+                app:cardElevation="0dp"
+                app:cardBackgroundColor="#1E293B"
+                app:strokeColor="#334155"
+                app:strokeWidth="1dp">
+                <TextView
+                    android:id="@+id/txtRecentEvents"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Loading..."
+                    android:textSize="12sp"
+                    android:textColor="#64748B"
+                    android:padding="16dp"
+                    android:lineSpacingExtra="5dp"
+                    android:fontFamily="monospace"/>
+            </com.google.android.material.card.MaterialCardView>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

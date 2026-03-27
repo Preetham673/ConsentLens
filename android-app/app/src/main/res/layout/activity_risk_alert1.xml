@@ -1,0 +1,1024 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_page_gradient"
+    android:fillViewport="true"
+    android:scrollbars="none">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- ================================================
+             HERO HEADER
+             ================================================ -->
+        <LinearLayout
+            android:id="@+id/layoutHeroHeader"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_hero_gradient"
+            android:orientation="vertical"
+            android:paddingStart="20dp"
+            android:paddingEnd="20dp"
+            android:paddingTop="28dp"
+            android:paddingBottom="32dp">
+
+            <!-- App icon + name -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:layout_marginBottom="22dp">
+
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_width="52dp"
+                    android:layout_height="52dp"
+                    app:cardCornerRadius="14dp"
+                    app:cardBackgroundColor="#1AFFFFFF"
+                    app:cardElevation="0dp"
+                    app:strokeColor="#26FFFFFF"
+                    app:strokeWidth="1dp"
+                    android:layout_marginEnd="14dp">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="📱"
+                        android:textSize="24sp"
+                        android:gravity="center"/>
+                </com.google.android.material.card.MaterialCardView>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+                    <TextView
+                        android:id="@+id/txtAppName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="App Name"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        android:textColor="#FFFFFF"
+                        android:letterSpacing="-0.02"
+                        android:maxLines="1"
+                        android:ellipsize="end"/>
+                    <TextView
+                        android:id="@+id/txtPackageSubtitle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="com.example.app"
+                        android:textSize="10sp"
+                        android:textColor="#66FFFFFF"
+                        android:layout_marginTop="2dp"
+                        android:maxLines="1"
+                        android:ellipsize="end"/>
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <!-- Score ring + risk level row -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:layout_marginBottom="20dp">
+
+                <!-- Score circle (FrameLayout layers) -->
+                <FrameLayout
+                    android:layout_width="76dp"
+                    android:layout_height="76dp"
+                    android:layout_marginEnd="16dp">
+
+                    <ProgressBar
+                        android:id="@+id/progressRiskBar"
+                        style="?android:attr/progressBarStyleHorizontal"
+                        android:layout_width="76dp"
+                        android:layout_height="76dp"
+                        android:max="100"
+                        android:progress="20"
+                        android:progressDrawable="@drawable/risk_ring_progress"
+                        android:rotation="-90"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:gravity="center">
+                        <TextView
+                            android:id="@+id/txtStatRiskScore"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="20"
+                            android:textSize="22sp"
+                            android:textStyle="bold"
+                            android:textColor="@color/risk_low"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="SCORE"
+                            android:textSize="7sp"
+                            android:textColor="#55FFFFFF"
+                            android:letterSpacing="0.1"/>
+                    </LinearLayout>
+
+                </FrameLayout>
+
+                <!-- Risk level + confidence -->
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/txtRiskBadge"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="LOW RISK"
+                        android:textSize="11sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/risk_low"
+                        android:background="@drawable/bg_pill_low"
+                        android:paddingStart="14dp"
+                        android:paddingEnd="14dp"
+                        android:paddingTop="5dp"
+                        android:paddingBottom="5dp"
+                        android:layout_marginBottom="8dp"/>
+
+                    <TextView
+                        android:id="@+id/txtConfidenceHero"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Medium confidence · Score 20/100"
+                        android:textSize="11sp"
+                        android:textColor="#77FFFFFF"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <!-- 3 mini stat cards -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:background="@drawable/bg_hero_stat_card"
+                    android:padding="10dp"
+                    android:gravity="center"
+                    android:layout_marginEnd="6dp">
+                    <TextView
+                        android:id="@+id/txtStatRiskScore2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="20"
+                        android:textSize="20sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/risk_low"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="RISK SCORE"
+                        android:textSize="8sp"
+                        android:textColor="#44FFFFFF"
+                        android:letterSpacing="0.05"
+                        android:layout_marginTop="2dp"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:background="@drawable/bg_hero_stat_card"
+                    android:padding="10dp"
+                    android:gravity="center"
+                    android:layout_marginEnd="6dp">
+                    <TextView
+                        android:id="@+id/txtStatRiskLevel"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="LOW"
+                        android:textSize="14sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/risk_low"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="LEVEL"
+                        android:textSize="8sp"
+                        android:textColor="#44FFFFFF"
+                        android:letterSpacing="0.05"
+                        android:layout_marginTop="2dp"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:background="@drawable/bg_hero_stat_card"
+                    android:padding="10dp"
+                    android:gravity="center">
+                    <TextView
+                        android:id="@+id/txtStatConfidence"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="MED"
+                        android:textSize="14sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/risk_medium"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="CONFIDENCE"
+                        android:textSize="8sp"
+                        android:textColor="#44FFFFFF"
+                        android:letterSpacing="0.05"
+                        android:layout_marginTop="2dp"/>
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+        <!-- ================================================
+             SECTION CARDS
+             ================================================ -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingStart="14dp"
+            android:paddingEnd="14dp"
+            android:paddingTop="14dp"
+            android:paddingBottom="24dp">
+
+
+            <!-- ==========================================
+                 SECTION 1 — SAFETY OVERVIEW
+                 ========================================== -->
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                app:cardCornerRadius="20dp"
+                app:cardElevation="0dp"
+                app:cardBackgroundColor="@color/card_bg"
+                app:strokeColor="@color/card_stroke"
+                app:strokeWidth="1dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:id="@+id/headerSection1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:gravity="center_vertical"
+                        android:padding="16dp"
+                        android:background="?attr/selectableItemBackground">
+
+                        <com.google.android.material.card.MaterialCardView
+                            android:layout_width="38dp"
+                            android:layout_height="38dp"
+                            app:cardCornerRadius="11dp"
+                            app:cardBackgroundColor="@color/icon_bg_green"
+                            app:cardElevation="0dp"
+                            android:layout_marginEnd="13dp">
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:text="🛡️"
+                                android:textSize="18sp"
+                                android:gravity="center"/>
+                        </com.google.android.material.card.MaterialCardView>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Safety Overview"
+                                android:textSize="15sp"
+                                android:textStyle="bold"
+                                android:textColor="@color/text_primary"
+                                android:letterSpacing="-0.01"/>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="How risky is this app?"
+                                android:textSize="11sp"
+                                android:textColor="@color/text_secondary"
+                                android:layout_marginTop="1dp"/>
+                        </LinearLayout>
+
+                        <TextView
+                            android:id="@+id/chevron1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="›"
+                            android:textSize="22sp"
+                            android:textColor="@color/text_hint"
+                            android:rotation="90"/>
+
+                    </LinearLayout>
+
+                    <View
+                        android:id="@+id/divider1"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/divider_color"/>
+
+                    <LinearLayout
+                        android:id="@+id/bodySection1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:padding="16dp"
+                        android:visibility="visible">
+
+                        <!-- Risk progress bar -->
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Risk meter"
+                            android:textSize="11sp"
+                            android:textColor="@color/text_secondary"
+                            android:layout_marginBottom="6dp"/>
+
+                        <ProgressBar
+                            android:id="@+id/progressRiskBar2"
+                            style="?android:attr/progressBarStyleHorizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="8dp"
+                            android:max="100"
+                            android:progress="20"
+                            android:progressDrawable="@drawable/risk_progress_bar"
+                            android:layout_marginBottom="14dp"/>
+
+                        <!-- Data impact -->
+                        <TextView
+                            android:id="@+id/txtDataImpact"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="This app may access: location"
+                            android:textSize="12sp"
+                            android:textColor="@color/text_secondary"
+                            android:layout_marginBottom="12dp"/>
+
+                        <!-- Sensitive alert -->
+                        <LinearLayout
+                            android:id="@+id/layoutSensitiveAlert"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:background="@drawable/bg_alert_warn_premium"
+                            android:padding="12dp"
+                            android:layout_marginBottom="8dp"
+                            android:visibility="gone">
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="⚠️"
+                                android:textSize="14sp"
+                                android:layout_marginEnd="10dp"/>
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Sensitive data detected"
+                                    android:textSize="12sp"
+                                    android:textStyle="bold"
+                                    android:textColor="@color/warn_title"/>
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Extra consent required. GDPR Article 9 triggered."
+                                    android:textSize="11sp"
+                                    android:textColor="@color/warn_body"
+                                    android:layout_marginTop="2dp"/>
+                            </LinearLayout>
+                        </LinearLayout>
+
+                        <!-- Purpose drift alert -->
+                        <LinearLayout
+                            android:id="@+id/layoutPurposeDriftAlert"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:background="@drawable/bg_alert_danger_premium"
+                            android:padding="12dp"
+                            android:layout_marginBottom="8dp"
+                            android:visibility="gone">
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="⚡"
+                                android:textSize="14sp"
+                                android:layout_marginEnd="10dp"/>
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Purpose drift detected"
+                                    android:textSize="12sp"
+                                    android:textStyle="bold"
+                                    android:textColor="@color/danger_title"/>
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="App now wants to use your data differently. Possible GDPR Article 5 violation."
+                                    android:textSize="11sp"
+                                    android:textColor="@color/danger_body"
+                                    android:layout_marginTop="2dp"/>
+                            </LinearLayout>
+                        </LinearLayout>
+
+                        <!-- Key values -->
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:background="@drawable/bg_kv_premium"
+                            android:padding="4dp"
+                            android:layout_marginBottom="12dp">
+
+                            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:padding="9dp">
+                                <TextView android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:text="Data impact" android:textSize="11sp" android:textColor="@color/text_secondary"/>
+                                <TextView android:id="@+id/txtDataImpactKv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Location" android:textSize="11sp" android:textStyle="bold" android:textColor="@color/text_primary"/>
+                            </LinearLayout>
+                            <View android:layout_width="match_parent" android:layout_height="1dp" android:background="@color/divider_color"/>
+                            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:padding="9dp">
+                                <TextView android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:text="Violations found" android:textSize="11sp" android:textColor="@color/text_secondary"/>
+                                <TextView android:id="@+id/txtViolations" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="None" android:textSize="11sp" android:textStyle="bold" android:textColor="@color/risk_low"/>
+                            </LinearLayout>
+                            <View android:layout_width="match_parent" android:layout_height="1dp" android:background="@color/divider_color"/>
+                            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:padding="9dp">
+                                <TextView android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:text="Processing time" android:textSize="11sp" android:textColor="@color/text_secondary"/>
+                                <TextView android:id="@+id/txtLatency" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="— ms" android:textSize="11sp" android:textStyle="bold" android:textColor="@color/text_primary"/>
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Reasons"
+                            android:textSize="12sp"
+                            android:textStyle="bold"
+                            android:textColor="@color/text_primary"
+                            android:layout_marginBottom="4dp"/>
+
+                        <TextView
+                            android:id="@+id/txtReasons"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="• Loading..."
+                            android:textSize="12sp"
+                            android:textColor="@color/text_secondary"
+                            android:lineSpacingExtra="3dp"
+                            android:layout_marginBottom="10dp"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Potential Risks"
+                            android:textSize="12sp"
+                            android:textStyle="bold"
+                            android:textColor="@color/text_primary"
+                            android:layout_marginBottom="4dp"/>
+
+                        <TextView
+                            android:id="@+id/txtPotentialRisks"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="• Loading..."
+                            android:textSize="12sp"
+                            android:textColor="@color/text_secondary"
+                            android:lineSpacingExtra="3dp"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </com.google.android.material.card.MaterialCardView>
+
+
+            <!-- ==========================================
+                 SECTION 2 — YOUR DATA
+                 ========================================== -->
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                app:cardCornerRadius="20dp"
+                app:cardElevation="0dp"
+                app:cardBackgroundColor="@color/card_bg"
+                app:strokeColor="@color/card_stroke"
+                app:strokeWidth="1dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:id="@+id/headerSection2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:gravity="center_vertical"
+                        android:padding="16dp"
+                        android:background="?attr/selectableItemBackground">
+
+                        <com.google.android.material.card.MaterialCardView
+                            android:layout_width="38dp"
+                            android:layout_height="38dp"
+                            app:cardCornerRadius="11dp"
+                            app:cardBackgroundColor="@color/icon_bg_amber"
+                            app:cardElevation="0dp"
+                            android:layout_marginEnd="13dp">
+                            <TextView android:layout_width="match_parent" android:layout_height="match_parent" android:text="📦" android:textSize="18sp" android:gravity="center"/>
+                        </com.google.android.material.card.MaterialCardView>
+
+                        <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:orientation="vertical">
+                            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Your Data" android:textSize="15sp" android:textStyle="bold" android:textColor="@color/text_primary"/>
+                            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="What is this app collecting?" android:textSize="11sp" android:textColor="@color/text_secondary" android:layout_marginTop="1dp"/>
+                        </LinearLayout>
+
+                        <TextView android:id="@+id/chevron2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="›" android:textSize="22sp" android:textColor="@color/text_hint"/>
+
+                    </LinearLayout>
+
+                    <View android:id="@+id/divider2" android:layout_width="match_parent" android:layout_height="1dp" android:background="@color/divider_color" android:visibility="gone"/>
+
+                    <LinearLayout
+                        android:id="@+id/bodySection2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:padding="16dp"
+                        android:visibility="gone">
+
+                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Data categories this app may access:" android:textSize="11sp" android:textColor="@color/text_secondary" android:layout_marginBottom="8dp"/>
+
+                        <com.google.android.material.chip.ChipGroup
+                            android:id="@+id/chipGroupData"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            app:chipSpacingVertical="4dp"
+                            android:layout_marginBottom="14dp"/>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:background="@drawable/bg_kv_premium"
+                            android:padding="4dp">
+
+                            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:padding="9dp">
+                                <TextView android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:text="Shared with 3rd parties" android:textSize="12sp" android:textColor="@color/text_secondary"/>
+                                <TextView android:id="@+id/txtThirdParty" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Yes" android:textSize="12sp" android:textStyle="bold" android:textColor="@color/risk_high"/>
+                            </LinearLayout>
+                            <View android:layout_width="match_parent" android:layout_height="1dp" android:background="@color/divider_color"/>
+                            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:padding="9dp">
+                                <TextView android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:text="Dataset reference" android:textSize="12sp" android:textColor="@color/text_secondary"/>
+                                <TextView android:id="@+id/txtDatasetRef" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="N/A" android:textSize="12sp" android:textStyle="bold" android:textColor="@color/text_primary"/>
+                            </LinearLayout>
+                            <View android:layout_width="match_parent" android:layout_height="1dp" android:background="@color/divider_color"/>
+                            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:padding="9dp">
+                                <TextView android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:text="Processing speed" android:textSize="12sp" android:textColor="@color/text_secondary"/>
+                                <TextView android:id="@+id/txtLatency2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="— ms" android:textSize="12sp" android:textStyle="bold" android:textColor="@color/text_primary"/>
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/layoutAiRecommendation"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:background="@drawable/bg_alert_warn_premium"
+                            android:padding="12dp"
+                            android:layout_marginTop="12dp">
+                            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="💡" android:textSize="14sp" android:layout_marginEnd="10dp"/>
+                            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical">
+                                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="AI Recommendation" android:textSize="12sp" android:textStyle="bold" android:textColor="@color/warn_title"/>
+                                <TextView android:id="@+id/txtAiRecommendation" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Analyzing..." android:textSize="11sp" android:textColor="@color/warn_body" android:layout_marginTop="2dp" android:lineSpacingExtra="2dp"/>
+                            </LinearLayout>
+                        </LinearLayout>
+
+                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Data Protection Impact Assessment" android:textSize="12sp" android:textStyle="bold" android:textColor="@color/text_primary" android:layout_marginTop="14dp" android:layout_marginBottom="6dp"/>
+
+                        <TextView
+                            android:id="@+id/txtDpiaReport"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Generating assessment..."
+                            android:textSize="12sp"
+                            android:textColor="@color/text_secondary"
+                            android:lineSpacingExtra="3dp"
+                            android:background="@drawable/bg_kv_premium"
+                            android:padding="12dp"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </com.google.android.material.card.MaterialCardView>
+
+
+            <!-- ==========================================
+                 SECTION 3 — LEGAL RIGHTS
+                 ========================================== -->
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                app:cardCornerRadius="20dp"
+                app:cardElevation="0dp"
+                app:cardBackgroundColor="@color/card_bg"
+                app:strokeColor="@color/card_stroke"
+                app:strokeWidth="1dp">
+
+                <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical">
+
+                    <LinearLayout
+                        android:id="@+id/headerSection3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:gravity="center_vertical"
+                        android:padding="16dp"
+                        android:background="?attr/selectableItemBackground">
+
+                        <com.google.android.material.card.MaterialCardView
+                            android:layout_width="38dp"
+                            android:layout_height="38dp"
+                            app:cardCornerRadius="11dp"
+                            app:cardBackgroundColor="@color/icon_bg_blue"
+                            app:cardElevation="0dp"
+                            android:layout_marginEnd="13dp">
+                            <TextView android:layout_width="match_parent" android:layout_height="match_parent" android:text="⚖️" android:textSize="18sp" android:gravity="center"/>
+                        </com.google.android.material.card.MaterialCardView>
+
+                        <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:orientation="vertical">
+                            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Your Legal Rights" android:textSize="15sp" android:textStyle="bold" android:textColor="@color/text_primary"/>
+                            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Laws protecting you" android:textSize="11sp" android:textColor="@color/text_secondary" android:layout_marginTop="1dp"/>
+                        </LinearLayout>
+
+                        <TextView android:id="@+id/chevron3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="›" android:textSize="22sp" android:textColor="@color/text_hint"/>
+
+                    </LinearLayout>
+
+                    <View android:id="@+id/divider3" android:layout_width="match_parent" android:layout_height="1dp" android:background="@color/divider_color" android:visibility="gone"/>
+
+                    <LinearLayout
+                        android:id="@+id/bodySection3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:padding="16dp"
+                        android:visibility="gone">
+
+                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="GDPR (Europe)" android:textSize="11sp" android:textStyle="bold" android:textColor="@color/chip_text" android:background="@drawable/bg_chip_blue" android:paddingStart="10dp" android:paddingEnd="10dp" android:paddingTop="4dp" android:paddingBottom="4dp" android:layout_marginBottom="10dp"/>
+
+                        <TextView android:id="@+id/txtGdprArticles" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Loading..." android:textSize="12sp" android:textColor="@color/text_secondary" android:lineSpacingExtra="4dp" android:layout_marginBottom="14dp"/>
+
+                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="DPDP (India)" android:textSize="11sp" android:textStyle="bold" android:textColor="@color/chip_green_text" android:background="@drawable/bg_chip_green" android:paddingStart="10dp" android:paddingEnd="10dp" android:paddingTop="4dp" android:paddingBottom="4dp" android:layout_marginBottom="10dp"/>
+
+                        <TextView android:id="@+id/txtDpdpPrinciples" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Loading..." android:textSize="12sp" android:textColor="@color/text_secondary" android:lineSpacingExtra="4dp" android:layout_marginBottom="12dp"/>
+
+                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="AI Policy Analysis" android:textSize="12sp" android:textStyle="bold" android:textColor="@color/text_primary" android:layout_marginBottom="6dp"/>
+
+                        <LinearLayout
+                            android:id="@+id/layoutAiPolicyRisk"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:background="@drawable/bg_kv_premium"
+                            android:padding="4dp">
+
+                            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:padding="9dp">
+                                <TextView android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:text="Policy risk level" android:textSize="12sp" android:textColor="@color/text_secondary"/>
+                                <TextView android:id="@+id/txtPolicyRisk" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="—" android:textSize="12sp" android:textStyle="bold" android:textColor="@color/text_primary"/>
+                            </LinearLayout>
+                            <View android:layout_width="match_parent" android:layout_height="1dp" android:background="@color/divider_color"/>
+                            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:padding="9dp">
+                                <TextView android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:text="AI confidence" android:textSize="12sp" android:textColor="@color/text_secondary"/>
+                                <TextView android:id="@+id/txtAiConfidence" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="—" android:textSize="12sp" android:textStyle="bold" android:textColor="@color/text_primary"/>
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Why you are seeing this" android:textSize="12sp" android:textStyle="bold" android:textColor="@color/text_primary" android:layout_marginTop="14dp" android:layout_marginBottom="6dp"/>
+
+                        <TextView android:id="@+id/txtExplanation" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Loading..." android:textSize="12sp" android:textColor="@color/text_secondary" android:lineSpacingExtra="4dp"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </com.google.android.material.card.MaterialCardView>
+
+
+            <!-- ==========================================
+                 SECTION 4 — TRUST & CERTIFICATION
+                 ========================================== -->
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                app:cardCornerRadius="20dp"
+                app:cardElevation="0dp"
+                app:cardBackgroundColor="@color/card_bg"
+                app:strokeColor="@color/card_stroke"
+                app:strokeWidth="1dp">
+
+                <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical">
+
+                    <LinearLayout
+                        android:id="@+id/headerSection4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:gravity="center_vertical"
+                        android:padding="16dp"
+                        android:background="?attr/selectableItemBackground">
+
+                        <com.google.android.material.card.MaterialCardView
+                            android:layout_width="38dp"
+                            android:layout_height="38dp"
+                            app:cardCornerRadius="11dp"
+                            app:cardBackgroundColor="@color/icon_bg_green"
+                            app:cardElevation="0dp"
+                            android:layout_marginEnd="13dp">
+                            <TextView android:layout_width="match_parent" android:layout_height="match_parent" android:text="🏅" android:textSize="18sp" android:gravity="center"/>
+                        </com.google.android.material.card.MaterialCardView>
+
+                        <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:orientation="vertical">
+                            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Trust and Certification" android:textSize="15sp" android:textStyle="bold" android:textColor="@color/text_primary"/>
+                            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Is this app verified?" android:textSize="11sp" android:textColor="@color/text_secondary" android:layout_marginTop="1dp"/>
+                        </LinearLayout>
+
+                        <TextView android:id="@+id/chevron4" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="›" android:textSize="22sp" android:textColor="@color/text_hint"/>
+
+                    </LinearLayout>
+
+                    <View android:id="@+id/divider4" android:layout_width="match_parent" android:layout_height="1dp" android:background="@color/divider_color" android:visibility="gone"/>
+
+                    <LinearLayout
+                        android:id="@+id/bodySection4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:padding="16dp"
+                        android:visibility="gone">
+
+                        <!-- ISO cert badge -->
+                        <LinearLayout
+                            android:id="@+id/layoutCertBadge"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:gravity="center_vertical"
+                            android:background="@drawable/bg_cert_green_premium"
+                            android:padding="14dp"
+                            android:layout_marginBottom="10dp">
+                            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="✅" android:textSize="28sp" android:layout_marginEnd="14dp"/>
+                            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical">
+                                <TextView android:id="@+id/txtCertStandard" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="ISO 27001 Certified" android:textSize="14sp" android:textStyle="bold" android:textColor="@color/cert_text_title"/>
+                                <TextView android:id="@+id/txtCertAuthority" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Verified · Risk reduced" android:textSize="11sp" android:textColor="@color/cert_text_sub" android:layout_marginTop="2dp"/>
+                            </LinearLayout>
+                        </LinearLayout>
+
+                        <!-- No cert -->
+                        <LinearLayout
+                            android:id="@+id/layoutNoCert"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:gravity="center_vertical"
+                            android:background="@drawable/bg_kv_premium"
+                            android:padding="14dp"
+                            android:layout_marginBottom="10dp"
+                            android:visibility="gone">
+                            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="ℹ️" android:textSize="20sp" android:layout_marginEnd="12dp"/>
+                            <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="No security certification found for this app." android:textSize="12sp" android:textColor="@color/text_secondary"/>
+                        </LinearLayout>
+
+                        <!-- ISO status -->
+                        <TextView
+                            android:id="@+id/txtIsoStatus"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Checking ISO 27001..."
+                            android:textSize="13sp"
+                            android:textStyle="bold"
+                            android:textColor="@color/text_primary"
+                            android:padding="12dp"
+                            android:layout_marginBottom="10dp"
+                            android:background="@drawable/bg_kv_premium"/>
+
+                        <!-- Not ISO certified warning -->
+                        <LinearLayout
+                            android:id="@+id/layoutIsoNotCertified"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:background="@drawable/bg_alert_danger_premium"
+                            android:padding="12dp"
+                            android:layout_marginBottom="10dp"
+                            android:visibility="gone">
+                            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="⚠️" android:textSize="16sp" android:layout_marginEnd="10dp"/>
+                            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical">
+                                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="ISO 27001 Not Certified" android:textSize="12sp" android:textStyle="bold" android:textColor="@color/danger_title"/>
+                                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="This app is not verified under ISO 27001. Exercise caution before granting consent." android:textSize="11sp" android:textColor="@color/danger_body" android:layout_marginTop="3dp" android:lineSpacingExtra="2dp"/>
+                            </LinearLayout>
+                        </LinearLayout>
+
+                        <!-- Retention banner -->
+                        <LinearLayout
+                            android:id="@+id/layoutRetentionBanner"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:gravity="center_vertical"
+                            android:background="@drawable/bg_alert_danger_premium"
+                            android:padding="12dp"
+                            android:layout_marginBottom="14dp">
+                            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="⏰" android:textSize="16sp" android:layout_marginEnd="8dp"/>
+                            <TextView android:id="@+id/txtRetentionStatus" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Consent Expired — you need to re-consent." android:textSize="12sp" android:textStyle="bold" android:textColor="@color/danger_title"/>
+                        </LinearLayout>
+
+                        <!-- PMI -->
+                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Privacy Maturity Index" android:textSize="12sp" android:textStyle="bold" android:textColor="@color/text_primary" android:layout_marginBottom="10dp"/>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:gravity="center_vertical"
+                            android:background="@drawable/bg_kv_premium"
+                            android:padding="14dp">
+
+                            <com.google.android.material.card.MaterialCardView
+                                android:layout_width="58dp"
+                                android:layout_height="58dp"
+                                app:cardCornerRadius="29dp"
+                                app:cardBackgroundColor="@color/risk_low"
+                                app:cardElevation="0dp"
+                                android:layout_marginEnd="14dp">
+                                <LinearLayout android:layout_width="match_parent" android:layout_height="match_parent" android:orientation="vertical" android:gravity="center">
+                                    <TextView android:id="@+id/txtPmiScore" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="100" android:textSize="16sp" android:textStyle="bold" android:textColor="#FFFFFF"/>
+                                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="/ 100" android:textSize="8sp" android:textColor="#CCFFFFFF"/>
+                                </LinearLayout>
+                            </com.google.android.material.card.MaterialCardView>
+
+                            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical">
+                                <TextView android:id="@+id/txtPmiLevel" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="ADVANCED compliance level" android:textSize="13sp" android:textStyle="bold" android:textColor="@color/text_primary"/>
+                                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="This app follows best practices for data protection." android:textSize="11sp" android:textColor="@color/text_secondary" android:layout_marginTop="4dp" android:lineSpacingExtra="2dp"/>
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </com.google.android.material.card.MaterialCardView>
+
+
+            <!-- ==========================================
+                 SECTION 5 — YOUR DECISION
+                 ========================================== -->
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                app:cardCornerRadius="20dp"
+                app:cardElevation="0dp"
+                app:cardBackgroundColor="@color/card_bg"
+                app:strokeColor="@color/card_stroke"
+                app:strokeWidth="1dp">
+
+                <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:gravity="center_vertical"
+                        android:padding="16dp">
+
+                        <com.google.android.material.card.MaterialCardView
+                            android:layout_width="38dp"
+                            android:layout_height="38dp"
+                            app:cardCornerRadius="11dp"
+                            app:cardBackgroundColor="@color/icon_bg_red"
+                            app:cardElevation="0dp"
+                            android:layout_marginEnd="13dp">
+                            <TextView android:layout_width="match_parent" android:layout_height="match_parent" android:text="✋" android:textSize="18sp" android:gravity="center"/>
+                        </com.google.android.material.card.MaterialCardView>
+
+                        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical">
+                            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Your Decision" android:textSize="15sp" android:textStyle="bold" android:textColor="@color/text_primary"/>
+                            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="What do you want to do?" android:textSize="11sp" android:textColor="@color/text_secondary" android:layout_marginTop="1dp"/>
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <View android:layout_width="match_parent" android:layout_height="1dp" android:background="@color/divider_color"/>
+
+                    <TextView
+                        android:id="@+id/txtUserRecommendation"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Review permissions and stay informed before making a choice."
+                        android:textSize="12sp"
+                        android:textColor="@color/text_secondary"
+                        android:lineSpacingExtra="3dp"
+                        android:padding="16dp"/>
+
+                    <View android:layout_width="match_parent" android:layout_height="1dp" android:background="@color/divider_color"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:padding="16dp">
+
+                        <Button
+                            android:id="@+id/btnGrant"
+                            android:layout_width="match_parent"
+                            android:layout_height="54dp"
+                            android:text="✅  Grant Consent"
+                            android:textStyle="bold"
+                            android:textSize="15sp"
+                            android:textColor="@android:color/white"
+                            android:backgroundTint="@color/risk_low"
+                            style="@style/Widget.MaterialComponents.Button"
+                            app:cornerRadius="16dp"/>
+
+                        <com.google.android.material.button.MaterialButton
+                            android:id="@+id/btnDeny"
+                            android:layout_width="match_parent"
+                            android:layout_height="52dp"
+                            android:text="🗑️  Uninstall App"
+                            android:textStyle="bold"
+                            android:textSize="15sp"
+                            android:textColor="@color/risk_high"
+                            android:layout_marginTop="10dp"
+                            app:strokeColor="@color/btn_deny_stroke"
+                            app:strokeWidth="1.5dp"
+                            app:cornerRadius="16dp"
+                            style="@style/Widget.MaterialComponents.Button.OutlinedButton"/>
+
+                        <Button
+                            android:id="@+id/btnHistory"
+                            android:layout_width="match_parent"
+                            android:layout_height="44dp"
+                            android:text="View Consent History"
+                            android:textSize="13sp"
+                            android:textColor="@color/text_secondary"
+                            android:layout_marginTop="8dp"
+                            style="@style/Widget.MaterialComponents.Button.TextButton"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </com.google.android.material.card.MaterialCardView>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>

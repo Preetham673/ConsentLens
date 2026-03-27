@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">కాన్సెంట్ లెన్స్</string>
+    <string name="dashboard_title">కాన్సెంట్ లెన్స్ డ్యాష్‌బోర్డ్</string>
+    <string name="dashboard_subtitle">మీ గోప్యత. మీ హక్కులు. మీ నియంత్రణ.</string>
+    <string name="supported_by">iSEA · DSCI మద్దతు</string>
+
+    <string name="total_consents">మొత్తం అనుమతులు</string>
+    <string name="high_risk_apps">అధిక ప్రమాద యాప్‌లు</string>
+    <string name="compliance_score">అనుగుణత స్కోర్</string>
+    <string name="revocation_error">రద్దు లోపం</string>
+    <string name="user_satisfaction">వినియోగదారు సంతృప్తి</string>
+
+    <string name="checking_compliance">అనుగుణత స్థితి తనిఖీ చేస్తోంది...</string>
+    <string name="compliant">🟢 అనుగుణంగా ఉంది</string>
+    <string name="partially_compliant">🟡 భాగంగా అనుగుణం</string>
+    <string name="non_compliant">🔴 అనుగుణంగా లేదు</string>
+
+    <string name="for_users">వినియోగదారులకు</string>
+    <string name="everyone">అందరికీ</string>
+    <string name="for_organisations">సంస్థలకు</string>
+    <string name="admin">నిర్వాహకుడు</string>
+
+    <string name="scan_apps">నా యాప్‌లను స్కాన్ చేయండి</string>
+    <string name="scan_apps_sub">ఏ యాప్‌లు సురక్షితమో తనిఖీ చేయండి</string>
+    <string name="btn_scan">స్కాన్</string>
+    <string name="consent_history">నా అనుమతి చరిత్ర</string>
+    <string name="consent_history_sub">మీరు ఏమి అంగీకరించారో చూడండి</string>
+    <string name="btn_view">చూడు</string>
+
+    <string name="audit_logs">ఆడిట్ లాగ్స్</string>
+    <string name="audit_logs_sub">అన్ని అనుమతి కార్యకలాపాలను ట్రాక్ చేయండి</string>
+    <string name="compliance_dashboard">కంప్లయన్స్ డ్యాష్‌బోర్డ్</string>
+    <string name="compliance_dashboard_sub">GDPR మరియు DPDP అనుగుణత అవలోకనం</string>
+    <string name="compliance_report">కంప్లయన్స్ రిపోర్ట్</string>
+    <string name="compliance_report_sub">నియంత్రణ నివేదికలు రూపొందించండి</string>
+    <string name="simulate_apps">యాప్ సిమ్యులేషన్</string>
+    <string name="simulate_apps_sub">మల్టీ-యాప్ గోప్యత దృశ్యాలను అనుకరించండి</string>
+    <string name="btn_open">తెరవు</string>
+    <string name="btn_generate">రూపొందించు</string>
+    <string name="btn_run">అమలు</string>
+
+    <string name="footer_line1">DSCI ద్వారా నడపబడుతోంది · iSEA మద్దతు</string>
+    <string name="footer_line2">GDPR · DPDP · ISO 27001 అనుగుణం</string>
+
+    <string name="grant">అనుమతి ఇవ్వండి</string>
+    <string name="deny">నిరాకరించండి</string>
+    <string name="receipt_title">అనుమతి రసీదు</string>
+    <string name="system_status">సిస్టమ్ స్థితి</string>
+    <string name="risk_monitoring">రిస్క్ మానిటరింగ్</string>
+    <string name="consent_engine">కన్సెంట్ ఇంజిన్</string>
+    <string name="compliance_status">అనుగుణత స్థితి</string>
+</resources>

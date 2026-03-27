@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Reusable input dialog layout -->
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="#FFFFFF"
+    android:padding="24dp">
+
+    <!-- Icon -->
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/cardDialogIcon"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_gravity="center"
+        android:layout_marginBottom="16dp"
+        app:cardCornerRadius="18dp"
+        app:cardBackgroundColor="#EDE9FE"
+        app:cardElevation="0dp">
+        <TextView
+            android:id="@+id/txtDialogIcon"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="💬"
+            android:textSize="26sp"
+            android:gravity="center"/>
+    </com.google.android.material.card.MaterialCardView>
+
+    <!-- Title -->
+    <TextView
+        android:id="@+id/txtDialogTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Title"
+        android:textSize="19sp"
+        android:textStyle="bold"
+        android:textColor="#111827"
+        android:gravity="center"
+        android:layout_marginBottom="6dp"/>
+
+    <!-- Subtitle -->
+    <TextView
+        android:id="@+id/txtDialogSubtitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Subtitle"
+        android:textSize="13sp"
+        android:textColor="#374151"
+        android:gravity="center"
+        android:lineSpacingExtra="3dp"
+        android:layout_marginBottom="20dp"/>
+
+    <!-- Input label -->
+    <TextView
+        android:id="@+id/txtInputLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enter value"
+        android:textSize="13sp"
+        android:textStyle="bold"
+        android:textColor="#111827"
+        android:layout_marginBottom="8dp"/>
+
+    <!-- Input field -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:background="@drawable/bg_input_field"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:paddingStart="14dp"
+        android:paddingEnd="14dp"
+        android:layout_marginBottom="8dp">
+
+        <TextView
+            android:id="@+id/txtInputIcon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="✏️"
+            android:textSize="16sp"
+            android:layout_marginEnd="10dp"/>
+
+        <EditText
+            android:id="@+id/etInput"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:hint="Type here..."
+            android:textColor="#111827"
+            android:textSize="14sp"
+            android:background="@android:color/transparent"/>
+
+    </LinearLayout>
+
+    <!-- Helper text -->
+    <TextView
+        android:id="@+id/txtInputHelper"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textSize="12sp"
+        android:textColor="#6B7280"
+        android:layout_marginBottom="20dp"
+        android:visibility="gone"/>
+
+    <!-- Buttons -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnDialogCancel"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:layout_weight="1"
+            android:text="Cancel"
+            android:textSize="13sp"
+            android:textColor="#374151"
+            android:backgroundTint="#F3F4F6"
+            android:layout_marginEnd="8dp"
+            style="@style/Widget.MaterialComponents.Button"
+            app:cornerRadius="12dp"/>
+
+        <Button
+            android:id="@+id/btnDialogSubmit"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:layout_weight="1"
+            android:text="Submit"
+            android:textSize="13sp"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#6366F1"
+            style="@style/Widget.MaterialComponents.Button"
+            app:cornerRadius="12dp"/>
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,960 @@
+{
+  "com.instagram.android": {
+    "appName": "Instagram",
+    "dataCategories": [
+      "location",
+      "contacts",
+      "media"
+    ],
+    "thirdPartySharing": true,
+    "policyClarity": "LOW",
+    "regulatoryFlags": [
+      "GDPR_HIGH_RISK"
+    ]
+  },
+  "com.whatsapp": {
+    "appName": "WhatsApp",
+    "dataCategories": [
+      "contacts",
+      "messages"
+    ],
+    "thirdPartySharing": false,
+    "policyClarity": "MEDIUM",
+    "regulatoryFlags": []
+  },
+  "com.spotify.music": {
+    "appName": "Spotify",
+    "dataCategories": [
+      "usage",
+      "preferences"
+    ],
+    "thirdPartySharing": true,
+    "policyClarity": "MEDIUM",
+    "regulatoryFlags": []
+  },
+  "com.truecaller": {
+    "appName": "com.truecaller",
+    "dataCategories": [
+      "location",
+      "contacts"
+    ],
+    "thirdPartySharing": true,
+    "policyClarity": "LOW",
+    "regulatoryFlags": [],
+    "dynamicallyGenerated": true
+  },
+  "com.android.chrome": {
+    "appName": "com.android.chrome",
+    "dataCategories": [
+      "location",
+      "contacts",
+      "media access"
+    ],
+    "thirdPartySharing": true,
+    "policyClarity": "LOW",
+    "regulatoryFlags": [],
+    "dynamicallyGenerated": true
+  },
+  "com.apsrtc.online": {
+    "appName": "com.apsrtc.online",
+    "dataCategories": [
+      "location",
+      "contacts"
+    ],
+    "thirdPartySharing": true,
+    "policyClarity": "LOW",
+    "regulatoryFlags": [],
+    "dynamicallyGenerated": true
+  },
+  "com.google.android.youtube": {
+    "appName": "com.google.android.youtube",
+    "dataCategories": [
+      "location"
+    ],
+    "thirdPartySharing": false,
+    "policyClarity": "MEDIUM",
+    "regulatoryFlags": [],
+    "dynamicallyGenerated": true
+  },
+  "com.nautilus.RealCricket3D": {
+    "appName": "com.nautilus.RealCricket3D",
+    "dataCategories": [
+      "location",
+      "contacts",
+      "media access"
+    ],
+    "thirdPartySharing": true,
+    "policyClarity": "LOW",
+    "regulatoryFlags": [],
+    "dynamicallyGenerated": true
+  },
+  "com.diskwalaapp": {
+    "appName": "com.diskwalaapp",
+    "dataCategories": [
+      "unknown"
+    ],
+    "thirdPartySharing": false,
+    "policyClarity": "MEDIUM",
+    "regulatoryFlags": [],
+    "dynamicallyGenerated": true
+  },
+  "com.google.android.contacts": {
+    "appName": "com.google.android.contacts",
+    "dataCategories": [
+      "location"
+    ],
+    "thirdPartySharing": false,
+    "policyClarity": "MEDIUM",
+    "regulatoryFlags": [],
+    "dynamicallyGenerated": true
+  },
+  "com.phonepe.app": {
+    "appName": "com.phonepe.app",
+    "dataCategories": [
+      "location",
+      "contacts",
+      "media access"
+    ],
+    "thirdPartySharing": true,
+    "policyClarity": "LOW",
+    "regulatoryFlags": [],
+    "dynamicallyGenerated": true
+  },
+  "com.google.android.calendar": {
+    "appName": "com.google.android.calendar",
+    "dataCategories": [
+      "location"
+    ],
+    "thirdPartySharing": false,
+    "policyClarity": "MEDIUM",
+    "regulatoryFlags": [],
+    "dynamicallyGenerated": true
+  },
+  "com.vivo.browser": {
+    "appName": "com.vivo.browser",
+    "dataCategories": [
+      "unknown"
+    ],
+    "thirdPartySharing": false,
+    "policyClarity": "MEDIUM",
+    "regulatoryFlags": [],
+    "dynamicallyGenerated": true
+  },
+  "com.google.android.apps.googleassistant": {
+    "appName": "com.google.android.apps.googleassistant",
+    "dataCategories": [
+      "location"
+    ],
+    "thirdPartySharing": false,
+    "policyClarity": "MEDIUM",
+    "regulatoryFlags": [],
+    "dynamicallyGenerated": true
+  },
+  "com.vivo.website": {
+    "appName": "com.vivo.website",
+    "dataCategories": [
+      "unknown"
+    ],
+    "thirdPartySharing": false,
+    "policyClarity": "MEDIUM",
+    "regulatoryFlags": [],
+    "dynamicallyGenerated": true
+  },
+  "com.ansangha.drdriving": {
+    "appName": "com.ansangha.drdriving",
+    "dataCategories": [
+      "location",
+      "contacts"
+    ],
+    "thirdPartySharing": true,
+    "policyClarity": "LOW",
+    "regulatoryFlags": [],
+    "dynamicallyGenerated": true
+  },
+  "com.bbk.theme": {
+    "appName": "com.bbk.theme",
+    "dataCategories": [
+      "unknown"
+    ],
+    "thirdPartySharing": false,
+    "policyClarity": "MEDIUM",
+    "regulatoryFlags": [],
+    "dynamicallyGenerated": true
+  },
+  "in.startv.hotstar": {
+    "appName": "in.startv.hotstar",
+    "dataCategories": [
+      "location",
+      "contacts",
+      "media access"
+    ],
+    "thirdPartySharing": true,
+    "policyClarity": "LOW",
+    "regulatoryFlags": [],
+    "dynamicallyGenerated": true
+  },
+  "com.google.android.projection.gearhead": {
+    "appName": "com.google.android.projection.gearhead",
+    "dataCategories": [
+      "location"
+    ],
+    "thirdPartySharing": false,
+    "policyClarity": "MEDIUM",
+    "regulatoryFlags": [],
+    "dynamicallyGenerated": true
+  },
+  "com.google.android.marvin.talkback": {
+    "appName": "com.google.android.marvin.talkback",
+    "dataCategories": [
+      "location"
+    ],
+    "thirdPartySharing": false,
+    "policyClarity": "MEDIUM",
+    "regulatoryFlags": [],
+    "dynamicallyGenerated": true
+  },
+  "com.example.a3rdactivity": {
+    "appName": "com.example.a3rdactivity",
+    "dataCategories": [
+      "Location"
+    ],
+    "thirdPartySharing": false,
+    "policyClarity": "MEDIUM",
+    "regulatoryFlags": [],
+    "dynamicallyGenerated": true
+  },
+  "vivo.app.adaptiveui.plugin": {
+    "appName": "vivo.app.adaptiveui.plugin",
+    "dataCategories": [
+      "Location"
+    ],
+    "thirdPartySharing": false,
+    "policyClarity": "MEDIUM",
+    "regulatoryFlags": [],
+    "dynamicallyGenerated": true
+  },
+  "com.vivo.widget.gallery": {
+    "appName": "com.vivo.widget.gallery",
+    "dataCategories": [
+      "Location"
+    ],
+    "thirdPartySharing": false,
+    "policyClarity": "MEDIUM",
+    "regulatoryFlags": [],
+    "dynamicallyGenerated": true
+  },
+  "com.vivo.alphacamera": {
+    "appName": "com.vivo.alphacamera",
+    "dataCategories": [
+      "Media",
+      "Location"
+    ],
+    "thirdPartySharing": false,
+    "policyClarity": "MEDIUM",
+    "regulatoryFlags": [],
+    "dynamicallyGenerated": true
+  },
+  "com.vivo.nightpearl": {
+    "appName": "com.vivo.nightpearl",
+    "dataCategories": [
+      "Location"
+    ],
+    "thirdPartySharing": false,
+    "policyClarity": "MEDIUM",
+    "regulatoryFlags": [],
+    "dynamicallyGenerated": true
+  },
+  "com.android.egg": {
+    "appName": "com.android.egg",
+    "dataCategories": [
+      "Location"
+    ],
+    "thirdPartySharing": false,
+    "policyClarity": "MEDIUM",
+    "regulatoryFlags": [],
+    "dynamicallyGenerated": true
+  },
+  "com.mediatek.atmwifimeta": {
+    "appName": "com.mediatek.atmwifimeta",
+    "dataCategories": [
+      "Location"
+    ],
+    "thirdPartySharing": false,
+    "policyClarity": "MEDIUM",
+    "regulatoryFlags": [],
+    "dynamicallyGenerated": true
+  },
+  "com.android.browser": {
+    "appName": "com.android.browser",
+    "dataCategories": [
+      "Browsing History",
+      "Location"
+    ],
+    "thirdPartySharing": false,
+    "policyClarity": "MEDIUM",
+    "regulatoryFlags": [],
+    "dynamicallyGenerated": true
+  },
+  "com.vivo.widget.cleanspeed": {
+    "appName": "com.vivo.widget.cleanspeed",
+    "dataCategories": [
+      "Location"
+    ],
+    "thirdPartySharing": false,
+    "policyClarity": "MEDIUM",
+    "regulatoryFlags": [],
+    "dynamicallyGenerated": true
+  },
+  "com.mediatek.ygps": {
+    "appName": "com.mediatek.ygps",
+    "dataCategories": [
+      "Location"
+    ],
+    "thirdPartySharing": false,
+    "policyClarity": "MEDIUM",
+    "regulatoryFlags": [],
+    "dynamicallyGenerated": true
+  },
+  "com.google.android.adservices.api": {
+    "appName": "com.google.android.adservices.api",
+    "dataCategories": [
+      "Location"
+    ],
+    "thirdPartySharing": false,
+    "policyClarity": "MEDIUM",
+    "regulatoryFlags": [],
+    "dynamicallyGenerated": true
+  },
+  "com.google.android.ext.services": {
+    "appName": "com.google.android.ext.services",
+    "dataCategories": [
+      "Location"
+    ],
+    "thirdPartySharing": false,
+    "policyClarity": "MEDIUM",
+    "regulatoryFlags": [],
+    "dynamicallyGenerated": true
+  },
+  "android": {
+    "appName": "android",
+    "dataCategories": [
+      "Location"
+    ],
+    "thirdPartySharing": false,
+    "policyClarity": "MEDIUM",
+    "regulatoryFlags": [],
+    "dynamicallyGenerated": true
+  },
+  "android.overlay.vivoresrro": {
+    "appName": "android.overlay.vivoresrro",
+    "dataCategories": [
+      "Location"
+    ],
+    "thirdPartySharing": false,
+    "policyClarity": "MEDIUM",
+    "regulatoryFlags": [],
+    "dynamicallyGenerated": true
+  },
+  "android.overlay.vrro": {
+    "appName": "android.overlay.vrro",
+    "dataCategories": [
+      "Location"
+    ],
+    "thirdPartySharing": false,
+    "policyClarity": "MEDIUM",
+    "regulatoryFlags": [],
+    "dynamicallyGenerated": true
+  },
+  "com.vivo.aiengine": {
+    "appName": "com.vivo.aiengine",
+    "dataCategories": [
+      "Location"
+    ],
+    "thirdPartySharing": false,
+    "policyClarity": "MEDIUM",
+    "regulatoryFlags": [],
+    "dynamicallyGenerated": true
+  },
+  "com.android.email.partnerprovider": {
+    "appName": "com.android.email.partnerprovider",
+    "dataCategories": [
+      "Location"
+    ],
+    "thirdPartySharing": false,
+    "policyClarity": "MEDIUM",
+    "regulatoryFlags": [],
+    "dynamicallyGenerated": true
+  },
+  "com.vivo.monochromeicons": {
+    "appName": "com.vivo.monochromeicons",
+    "dataCategories": [
+      "Browsing History",
+      "Location"
+    ],
+    "thirdPartySharing": false,
+    "policyClarity": "MEDIUM",
+    "regulatoryFlags": [],
+    "dynamicallyGenerated": true
+  },
+  "com.vivo.gallery": {
+    "appName": "com.vivo.gallery",
+    "dataCategories": [
+      "Location"
+    ],
+    "thirdPartySharing": false,
+    "policyClarity": "MEDIUM",
+    "regulatoryFlags": [],
+    "dynamicallyGenerated": true
+  },
+  "com.vos.as.vit": {
+    "appName": "com.vos.as.vit",
+    "dataCategories": [
+      "Location"
+    ],
+    "thirdPartySharing": false,
+    "policyClarity": "MEDIUM",
+    "regulatoryFlags": [],
+    "dynamicallyGenerated": true
+  },
+  "ALL": {
+    "appName": "ALL",
+    "dataCategories": [
+      "Location"
+    ],
+    "thirdPartySharing": false,
+    "policyClarity": "MEDIUM",
+    "regulatoryFlags": [],
+    "dynamicallyGenerated": true
+  },
+  "com.vivo.appfilter": {
+    "appName": "com.vivo.appfilter",
+    "dataCategories": [
+      "Location"
+    ],
+    "thirdPartySharing": false,
+    "policyClarity": "MEDIUM",
+    "regulatoryFlags": [],
+    "dynamicallyGenerated": true
+  },
+  "com.vivo.doubleinstance": {
+    "appName": "com.vivo.doubleinstance",
+    "dataCategories": [
+      "Location"
+    ],
+    "thirdPartySharing": false,
+    "policyClarity": "MEDIUM",
+    "regulatoryFlags": [],
+    "dynamicallyGenerated": true
+  },
+  "com.android.angle": {
+    "appName": "com.android.angle",
+    "dataCategories": [
+      "Location"
+    ],
+    "thirdPartySharing": false,
+    "policyClarity": "MEDIUM",
+    "regulatoryFlags": [],
+    "dynamicallyGenerated": true
+  },
+  "com.example.cameragps": {
+    "appName": "com.example.cameragps",
+    "dataCategories": [
+      "Media",
+      "Location"
+    ],
+    "thirdPartySharing": false,
+    "policyClarity": "MEDIUM",
+    "regulatoryFlags": [],
+    "dynamicallyGenerated": true
+  },
+  "com.android.contacts": {
+    "appName": "com.android.contacts",
+    "dataCategories": [
+      "Contacts"
+    ],
+    "thirdPartySharing": false,
+    "policyClarity": "MEDIUM",
+    "regulatoryFlags": [],
+    "dynamicallyGenerated": true
+  },
+  "com.google.android.networkstack": {
+    "appName": "com.google.android.networkstack",
+    "dataCategories": [
+      "Location"
+    ],
+    "thirdPartySharing": false,
+    "policyClarity": "MEDIUM",
+    "regulatoryFlags": [],
+    "dynamicallyGenerated": true
+  },
+  "com.google.android.apps.safetyhub": {
+    "appName": "com.google.android.apps.safetyhub",
+    "dataCategories": [
+      "location"
+    ],
+    "thirdPartySharing": false,
+    "policyClarity": "MEDIUM",
+    "regulatoryFlags": [],
+    "dynamicallyGenerated": true
+  },
+  "com.google.android.overlay.modules.permissioncontroller.forframework": {
+    "appName": "com.google.android.overlay.modules.permissioncontroller.forframework",
+    "dataCategories": [
+      "Location"
+    ],
+    "thirdPartySharing": false,
+    "policyClarity": "MEDIUM",
+    "regulatoryFlags": [],
+    "dynamicallyGenerated": true
+  },
+  "com.fintech.wallet": {
+    "appName": "com.fintech.wallet",
+    "dataCategories": [
+      "Location"
+    ],
+    "thirdPartySharing": false,
+    "policyClarity": "MEDIUM",
+    "regulatoryFlags": [],
+    "dynamicallyGenerated": true
+  },
+  "com.health.tracker": {
+    "appName": "com.health.tracker",
+    "dataCategories": [
+      "Location"
+    ],
+    "thirdPartySharing": false,
+    "policyClarity": "MEDIUM",
+    "regulatoryFlags": [],
+    "dynamicallyGenerated": true
+  },
+  "com.ecommerce.shop": {
+    "appName": "com.ecommerce.shop",
+    "dataCategories": [
+      "Location"
+    ],
+    "thirdPartySharing": false,
+    "policyClarity": "MEDIUM",
+    "regulatoryFlags": [],
+    "dynamicallyGenerated": true
+  },
+  "com.vivo.android.wifi.common.resources.overlay": {
+    "appName": "com.vivo.android.wifi.common.resources.overlay",
+    "dataCategories": [
+      "Location"
+    ],
+    "thirdPartySharing": false,
+    "policyClarity": "MEDIUM",
+    "regulatoryFlags": [],
+    "dynamicallyGenerated": true
+  },
+  "com.mediatek.datachannel.service": {
+    "appName": "com.mediatek.datachannel.service",
+    "dataCategories": [
+      "Location"
+    ],
+    "thirdPartySharing": false,
+    "policyClarity": "MEDIUM",
+    "regulatoryFlags": [],
+    "dynamicallyGenerated": true
+  },
+  "com.vivo.gamewatch": {
+    "appName": "com.vivo.gamewatch",
+    "dataCategories": [
+      "Location"
+    ],
+    "thirdPartySharing": false,
+    "policyClarity": "MEDIUM",
+    "regulatoryFlags": [],
+    "dynamicallyGenerated": true
+  },
+  "com.android.managedprovisioning": {
+    "appName": "com.android.managedprovisioning",
+    "dataCategories": [
+      "Location"
+    ],
+    "thirdPartySharing": false,
+    "policyClarity": "MEDIUM",
+    "regulatoryFlags": [],
+    "dynamicallyGenerated": true
+  },
+  "com.google.android.apps.docs.editors.docs": {
+    "appName": "com.google.android.apps.docs.editors.docs",
+    "dataCategories": [
+      "location"
+    ],
+    "thirdPartySharing": false,
+    "policyClarity": "MEDIUM",
+    "regulatoryFlags": [],
+    "dynamicallyGenerated": true
+  },
+  "com.android.server.telecom": {
+    "appName": "com.android.server.telecom",
+    "dataCategories": [
+      "Location"
+    ],
+    "thirdPartySharing": false,
+    "policyClarity": "MEDIUM",
+    "regulatoryFlags": [],
+    "dynamicallyGenerated": true
+  },
+  "com.android.emergency": {
+    "appName": "com.android.emergency",
+    "dataCategories": [
+      "Location"
+    ],
+    "thirdPartySharing": false,
+    "policyClarity": "MEDIUM",
+    "regulatoryFlags": [],
+    "dynamicallyGenerated": true
+  },
+  "com.android.carrierconfig": {
+    "appName": "com.android.carrierconfig",
+    "dataCategories": [
+      "Location"
+    ],
+    "thirdPartySharing": false,
+    "policyClarity": "MEDIUM",
+    "regulatoryFlags": [],
+    "dynamicallyGenerated": true
+  },
+  "com.android.ons": {
+    "appName": "com.android.ons",
+    "dataCategories": [
+      "Location"
+    ],
+    "thirdPartySharing": false,
+    "policyClarity": "MEDIUM",
+    "regulatoryFlags": [],
+    "dynamicallyGenerated": true
+  },
+  "com.android.deskclock": {
+    "appName": "com.android.deskclock",
+    "dataCategories": [
+      "Location"
+    ],
+    "thirdPartySharing": false,
+    "policyClarity": "MEDIUM",
+    "regulatoryFlags": [],
+    "dynamicallyGenerated": true
+  },
+  "com.vivo.timerwidget": {
+    "appName": "com.vivo.timerwidget",
+    "dataCategories": [
+      "Location"
+    ],
+    "thirdPartySharing": false,
+    "policyClarity": "MEDIUM",
+    "regulatoryFlags": [],
+    "dynamicallyGenerated": true
+  },
+  "com.android.camera": {
+    "appName": "com.android.camera",
+    "dataCategories": [
+      "Media",
+      "Location"
+    ],
+    "thirdPartySharing": false,
+    "policyClarity": "MEDIUM",
+    "regulatoryFlags": [],
+    "dynamicallyGenerated": true
+  },
+  "com.vivo.faceui": {
+    "appName": "com.vivo.faceui",
+    "dataCategories": [
+      "Location"
+    ],
+    "thirdPartySharing": false,
+    "policyClarity": "MEDIUM",
+    "regulatoryFlags": [],
+    "dynamicallyGenerated": true
+  },
+  "com.microsoft.office.excel": {
+    "appName": "com.microsoft.office.excel",
+    "dataCategories": [
+      "location",
+      "contacts",
+      "media access",
+      "biometric"
+    ],
+    "thirdPartySharing": true,
+    "policyClarity": "LOW",
+    "regulatoryFlags": [],
+    "dynamicallyGenerated": true
+  },
+  "com.example.consentlens": {
+    "appName": "com.example.consentlens",
+    "dataCategories": [
+      "Location"
+    ],
+    "thirdPartySharing": false,
+    "policyClarity": "MEDIUM",
+    "regulatoryFlags": [],
+    "dynamicallyGenerated": true
+  },
+  "com.example.gps": {
+    "appName": "com.example.gps",
+    "dataCategories": [
+      "Location"
+    ],
+    "thirdPartySharing": false,
+    "policyClarity": "MEDIUM",
+    "regulatoryFlags": [],
+    "dynamicallyGenerated": true
+  },
+  "com.android.carrierdefaultapp": {
+    "appName": "com.android.carrierdefaultapp",
+    "dataCategories": [
+      "Location"
+    ],
+    "thirdPartySharing": false,
+    "policyClarity": "MEDIUM",
+    "regulatoryFlags": [],
+    "dynamicallyGenerated": true
+  },
+  "com.android.certinstaller": {
+    "appName": "com.android.certinstaller",
+    "dataCategories": [
+      "Location"
+    ],
+    "thirdPartySharing": false,
+    "policyClarity": "MEDIUM",
+    "regulatoryFlags": [],
+    "dynamicallyGenerated": true
+  },
+  "com.android.calllogbackup": {
+    "appName": "com.android.calllogbackup",
+    "dataCategories": [
+      "Location"
+    ],
+    "thirdPartySharing": false,
+    "policyClarity": "MEDIUM",
+    "regulatoryFlags": [],
+    "dynamicallyGenerated": true
+  },
+  "com.android.cameraextensions": {
+    "appName": "com.android.cameraextensions",
+    "dataCategories": [
+      "Media",
+      "Location"
+    ],
+    "thirdPartySharing": false,
+    "policyClarity": "MEDIUM",
+    "regulatoryFlags": [],
+    "dynamicallyGenerated": true
+  },
+  "com.android.providers.media": {
+    "appName": "com.android.providers.media",
+    "dataCategories": [
+      "Location"
+    ],
+    "thirdPartySharing": false,
+    "policyClarity": "MEDIUM",
+    "regulatoryFlags": [],
+    "dynamicallyGenerated": true
+  },
+  "com.android.backupconfirm": {
+    "appName": "com.android.backupconfirm",
+    "dataCategories": [
+      "Location"
+    ],
+    "thirdPartySharing": false,
+    "policyClarity": "MEDIUM",
+    "regulatoryFlags": [],
+    "dynamicallyGenerated": true
+  },
+  "com.google.android.apps.maps": {
+    "appName": "com.google.android.apps.maps",
+    "dataCategories": [
+      "location"
+    ],
+    "thirdPartySharing": false,
+    "policyClarity": "MEDIUM",
+    "regulatoryFlags": [],
+    "dynamicallyGenerated": true
+  },
+  "com.example.myapplication1": {
+    "appName": "com.example.myapplication1",
+    "dataCategories": [
+      "Location"
+    ],
+    "thirdPartySharing": false,
+    "policyClarity": "MEDIUM",
+    "regulatoryFlags": [],
+    "dynamicallyGenerated": true
+  },
+  "com.android.proxyhandler": {
+    "appName": "com.android.proxyhandler",
+    "dataCategories": [
+      "Location"
+    ],
+    "thirdPartySharing": false,
+    "policyClarity": "MEDIUM",
+    "regulatoryFlags": [],
+    "dynamicallyGenerated": true
+  },
+  "com.android.wallpaperbackup": {
+    "appName": "com.android.wallpaperbackup",
+    "dataCategories": [
+      "Location"
+    ],
+    "thirdPartySharing": false,
+    "policyClarity": "MEDIUM",
+    "regulatoryFlags": [],
+    "dynamicallyGenerated": true
+  },
+  "com.google.android.apps.wellbeing": {
+    "appName": "com.google.android.apps.wellbeing",
+    "dataCategories": [
+      "location"
+    ],
+    "thirdPartySharing": false,
+    "policyClarity": "MEDIUM",
+    "regulatoryFlags": [],
+    "dynamicallyGenerated": true
+  },
+  "com.mediatek.mt6878.gamedriver": {
+    "appName": "com.mediatek.mt6878.gamedriver",
+    "dataCategories": [
+      "Location"
+    ],
+    "thirdPartySharing": false,
+    "policyClarity": "MEDIUM",
+    "regulatoryFlags": [],
+    "dynamicallyGenerated": true
+  },
+  "com.vivo.calculator": {
+    "appName": "com.vivo.calculator",
+    "dataCategories": [
+      "Location"
+    ],
+    "thirdPartySharing": false,
+    "policyClarity": "MEDIUM",
+    "regulatoryFlags": [],
+    "dynamicallyGenerated": true
+  },
+  "com.android.sharedstoragebackup": {
+    "appName": "com.android.sharedstoragebackup",
+    "dataCategories": [
+      "Location"
+    ],
+    "thirdPartySharing": false,
+    "policyClarity": "MEDIUM",
+    "regulatoryFlags": [],
+    "dynamicallyGenerated": true
+  },
+  "com.android.DeviceAsWebcam": {
+    "appName": "com.android.DeviceAsWebcam",
+    "dataCategories": [
+      "Location"
+    ],
+    "thirdPartySharing": false,
+    "policyClarity": "MEDIUM",
+    "regulatoryFlags": [],
+    "dynamicallyGenerated": true
+  },
+  "com.android.providers.calendar": {
+    "appName": "com.android.providers.calendar",
+    "dataCategories": [
+      "Location"
+    ],
+    "thirdPartySharing": false,
+    "policyClarity": "MEDIUM",
+    "regulatoryFlags": [],
+    "dynamicallyGenerated": true
+  },
+  "com.vivo.pie": {
+    "appName": "com.vivo.pie",
+    "dataCategories": [
+      "Location"
+    ],
+    "thirdPartySharing": false,
+    "policyClarity": "MEDIUM",
+    "regulatoryFlags": [],
+    "dynamicallyGenerated": true
+  },
+  "com.example.sharedpreference": {
+    "appName": "com.example.sharedpreference",
+    "dataCategories": [
+      "Location"
+    ],
+    "thirdPartySharing": false,
+    "policyClarity": "MEDIUM",
+    "regulatoryFlags": [],
+    "dynamicallyGenerated": true
+  },
+  "com.google.android.contactkeys": {
+    "appName": "com.google.android.contactkeys",
+    "dataCategories": [
+      "location",
+      "contacts",
+      "media access"
+    ],
+    "thirdPartySharing": true,
+    "policyClarity": "LOW",
+    "regulatoryFlags": [],
+    "dynamicallyGenerated": true
+  },
+  "com.android.internal.systemui.navbar.threebutton": {
+    "appName": "com.android.internal.systemui.navbar.threebutton",
+    "dataCategories": [
+      "Location"
+    ],
+    "thirdPartySharing": false,
+    "policyClarity": "MEDIUM",
+    "regulatoryFlags": [],
+    "dynamicallyGenerated": true
+  },
+  "in.gov.uidai.facerd": {
+    "appName": "in.gov.uidai.facerd",
+    "dataCategories": [
+      "location",
+      "contacts",
+      "biometric"
+    ],
+    "thirdPartySharing": true,
+    "policyClarity": "LOW",
+    "regulatoryFlags": [],
+    "dynamicallyGenerated": true
+  },
+  "com.nvt.touch.sensorcheck": {
+    "appName": "com.nvt.touch.sensorcheck",
+    "dataCategories": [
+      "Location"
+    ],
+    "thirdPartySharing": false,
+    "policyClarity": "MEDIUM",
+    "regulatoryFlags": [],
+    "dynamicallyGenerated": true
+  },
+  "com.vivo.fuelsummary": {
+    "appName": "com.vivo.fuelsummary",
+    "dataCategories": [
+      "Location"
+    ],
+    "thirdPartySharing": false,
+    "policyClarity": "MEDIUM",
+    "regulatoryFlags": [],
+    "dynamicallyGenerated": true
+  },
+  "com.google.android.googlequicksearchbox": {
+    "appName": "com.google.android.googlequicksearchbox",
+    "dataCategories": [
+      "location"
+    ],
+    "thirdPartySharing": false,
+    "policyClarity": "MEDIUM",
+    "regulatoryFlags": [],
+    "dynamicallyGenerated": true
+  },
+  "org.telegram.messenger": {
+    "appName": "org.telegram.messenger",
+    "dataCategories": [
+      "location",
+      "contacts"
+    ],
+    "thirdPartySharing": true,
+    "policyClarity": "LOW",
+    "regulatoryFlags": [],
+    "dynamicallyGenerated": true
+  }
+}

@@ -1,0 +1,123 @@
+// =====================================================
+// whatsappOTPService.js
+// Using Twilio WhatsApp Sandbox — free, stable
+// Place in: security/whatsappOTPService.js
+// =====================================================
+// SETUP:
+//   npm install twilio
+//   1. Go to twilio.com → sign up free
+//   2. Console → Messaging → Try WhatsApp
+//   3. Fill credentials below
+// =====================================================
+
+const twilio = require("twilio");
+
+// -------------------------------------------------------
+// YOUR TWILIO CREDENTIALS
+// Get from: twilio.com/console
+// -------------------------------------------------------
+const ACCOUNT_SID   = process.env.TWILIO_ACCOUNT_SID;
+const AUTH_TOKEN    = process.env.TWILIO_AUTH_TOKEN;
+const TWILIO_NUMBER = "whatsapp:+14155238886"; // Twilio sandbox number
+
+const twilioClient = twilio(ACCOUNT_SID, AUTH_TOKEN);
+
+// -------------------------------------------------------
+// OTP storage
+// -------------------------------------------------------
+const otpStore   = new Map();
+const OTP_EXPIRY = 5 * 60 * 1000; // 5 minutes
+
+
+// -------------------------------------------------------
+// SEND OTP via WhatsApp
+// phone = country code + number e.g. 919876543210
+// -------------------------------------------------------
+async function sendWhatsAppOTP(phone) {
+
+    // Clean number — remove +, spaces, dashes
+    const cleanPhone = phone.replace(/[\s\-\+\(\)]/g, "").trim();
+
+    // Validate — must be 10 to 15 digits
+    if (!/^\d{10,15}$/.test(cleanPhone)) {
+        throw new Error(
+            "Invalid phone number. Use country code + number. " +
+            "India example: 919876543210"
+        );
+    }
+
+    // Generate 6 digit OTP
+    const otp = Math.floor(100000 + Math.random() * 900000).toString();
+
+    // Save OTP with expiry
+    otpStore.set(cleanPhone, {
+        otp,
+        expires: Date.now() + OTP_EXPIRY
+    });
+
+    console.log(`[OTP] Sending to ${cleanPhone} | OTP: ${otp}`);
+
+    try {
+
+        await twilioClient.messages.create({
+            from: TWILIO_NUMBER,
+            to:   `whatsapp:+${cleanPhone}`,
+            body:
+                `🔐 *ConsentLens — Guardian Verification*\n\n` +
+                `Your child is requesting app permission.\n\n` +
+                `Your OTP is: *${otp}*\n\n` +
+                `⏱ Expires in 5 minutes.\n` +
+                `🚫 Do not share with anyone.`
+        });
+
+        console.log(`[OTP] ✅ Delivered to ${cleanPhone}`);
+
+        return { success: true };
+
+    } catch (err) {
+
+        otpStore.delete(cleanPhone);
+
+        console.error(`[OTP] ❌ Failed:`, err.message);
+
+        throw new Error("Failed to send OTP. " + err.message);
+    }
+}
+
+
+// -------------------------------------------------------
+// VERIFY OTP
+// -------------------------------------------------------
+function verifyWhatsAppOTP(phone, enteredOTP) {
+
+    const cleanPhone = phone.replace(/[\s\-\+\(\)]/g, "").trim();
+
+    const record = otpStore.get(cleanPhone);
+
+    // No OTP found
+    if (!record) {
+        console.log(`[OTP] No record for ${cleanPhone}`);
+        return false;
+    }
+
+    // Expired
+    if (record.expires < Date.now()) {
+        otpStore.delete(cleanPhone);
+        console.log(`[OTP] Expired for ${cleanPhone}`);
+        return false;
+    }
+
+    // Correct OTP
+    if (record.otp === enteredOTP.trim()) {
+        otpStore.delete(cleanPhone);
+        console.log(`[OTP] ✅ Verified for ${cleanPhone}`);
+        return true;
+    }
+
+    // Wrong OTP
+    console.log(`[OTP] ❌ Wrong OTP for ${cleanPhone}`);
+    return false;
+}
+
+
+module.exports = { sendWhatsAppOTP, verifyWhatsAppOTP };

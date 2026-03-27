@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="#0F172A"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <!-- Title -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ConsentLens"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:textColor="#FFFFFF"
+        android:layout_marginBottom="16dp"/>
+
+    <!-- Search Box -->
+    <EditText
+        android:id="@+id/searchBox"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="Search apps..."
+        android:textColor="#FFFFFF"
+        android:textColorHint="#BBBBBB"
+        android:background="#1E293B"
+        android:padding="12dp"
+        android:layout_marginBottom="12dp"/>
+
+    <!-- ListView (takes remaining space) -->
+    <ListView
+        android:id="@+id/listApps"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:dividerHeight="6dp"
+        android:background="@android:color/transparent"/>
+
+    <!-- Result Card -->
+    <TextView
+        android:id="@+id/txtResult"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#1E293B"
+        android:textColor="#FFFFFF"
+        android:padding="16dp"
+        android:layout_marginTop="12dp"/>
+
+</LinearLayout>
